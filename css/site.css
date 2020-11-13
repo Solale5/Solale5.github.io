@@ -1,13 +1,19 @@
 h1{
+    font-size: 300%;
+   font-weight: 100;
     color:lightblue;
     text-align: center;
+  
 }
 
 header{
     text-align: left;
+    font-weight: 100;
+    border: 6px solid lightblue;
 }
 body{
     text-align: center;
+    font-weight: 100;
 }
 .img1{
     width: 10%;
@@ -15,6 +21,7 @@ body{
     display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 10px;
 }
 
 .img2{
