@@ -1,33 +1,75 @@
 h1{
-    font-size: 300%;
-   font-weight: 100;
-    color:lightblue;
+    font-size: 260%;
+    font-weight: 300;
+  font-family: "Poppins", sans-serif;
+  color: #173b6c;
     text-align: center;
-  
+    
+    
 }
 
 header{
     text-align: left;
     font-weight: 100;
-    border: 6px solid lightblue;
+    
+    background-color: rgb(248, 249, 250);
+    margin-bottom: 10px;
 }
-body{
+body
+{
+    
+    margin-left: auto;
+    margin-right: auto;
+    background-color:  rgb(248, 249, 250);
+    
+    
+}
+.outline
+{
+    border: 7px solid rgb(85, 153, 175);
+}
+body .intro-area p{
+    font-size: 150%;
     text-align: center;
-    font-weight: 100;
-}
-.img1{
-    width: 10%;
-    height: auto;
-    display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 10px;
+    
+  
+    
+   
+    
+    
+   
+    
 }
 
-.img2{
-    width: 30%;
+
+.main-area p
+{
+    
+    font-size: 150%;
+    text-align: center;
+   
+    margin: auto;
+   
+}
+
+
+ 
+.pic
+{
+  width: 30%;
     height: auto;
     display: block;
   margin-left: auto;
   margin-right: auto;
+  
 }
+.img1
+{
+  width: 10%;
+    height: auto;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
