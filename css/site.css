@@ -12,14 +12,14 @@ header{
     text-align: left;
     font-weight: 100;
     
-    background-color: rgb(248, 249, 250);
+    background-color: rgb(182, 199, 227);
     margin-bottom: 10px;
 }
 body
 {
     
    
-    background-color:  rgb(248, 249, 250);
+  background-color: rgb(182, 199, 227);
     
     
 }
@@ -36,6 +36,8 @@ body .intro-area p{
    
     
 }
+
+
 
 
 .main-area p
