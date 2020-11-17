@@ -24,31 +24,16 @@ body
     
 }
 
-body .intro-area p{
-    font-size: 150%;
-    text-align: center;
-    
-  
-    
-   
-    
-    
-   
-    
-}
 
 
-
-
-.main-area p
+.resume
 {
-    
-    font-size: 150%;
-    text-align: center;
-   
-    margin: auto;
-   
+  background-color: rgb(246, 248, 252);
 }
+
+
+
+
 
 
  
