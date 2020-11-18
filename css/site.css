@@ -63,7 +63,7 @@ body
 
 .socials .ig
 {
-  width: 5%;
+  width: 10%;
     height: auto;
     
   
@@ -72,7 +72,8 @@ body
 
 .socials .linkedin
 {
-  width: 8%;
+  margin-left: auto;
+  width: 10%;
     height: auto;
     
   
@@ -80,8 +81,8 @@ body
 }
 .socials .github
 {
-  margin-left: 19px;
-  width: 5%;
+  margin-left: auto;
+  width: 10%;
     height: auto;
    
     
