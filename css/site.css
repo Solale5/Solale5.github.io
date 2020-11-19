@@ -33,11 +33,7 @@ body
 
 
 
-.projects
-{
-  text-align: center;
-  font-size: 200%;
-}
+
 
 
  
@@ -89,4 +85,28 @@ body
   
   
 }
+
+.projecthead
+{
+  
+  text-align: center;
+  font-size: 200%;
+  color: #173b6c;
+  
+}
+.projectbody
+{
+  background-color: rgb(246, 248, 252); 
+  padding: 20%;
+  font-size: 115%;
+  
+}
+
+.pro
+{
+   
+   background-color: rgb(182, 199, 227);
+}
+
+
 
