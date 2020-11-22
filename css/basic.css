@@ -185,8 +185,14 @@ body .firstarea
     text-align: center;
     flex: 1;
 }
-@media screen and (min-width: 0px)
+@media screen and (min-width: 200px)
 {
+    body .pic
+    {
+    width: 85%;
+    
+  
+    }
     .ig
     {
       width: 20%;
