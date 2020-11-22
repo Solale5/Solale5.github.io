@@ -1,0 +1,284 @@
+html
+{
+    background-color: rgb(182, 199, 227);
+    background-image: linear-gradient(to bottom, rgb(182, 199, 227), rgb(246, 248, 252));
+}
+
+@keyframes fadeBounce
+{
+    0%
+    {
+        opacity: 0;
+        transform: translateY(-200%);
+    }
+    40%
+    {
+        
+        transform: translateY(0);
+    }
+    55%
+    {
+        opacity: 1;
+        transform: translateY(-8px);
+    }
+    70%
+    {
+        
+        transform: translateY(0);
+    }
+    85%
+    {
+        opacity: 1;
+        transform: translateY(-4px);
+    }
+
+    100%
+    {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+body
+{
+    
+    font-family: Tahoma, sans-serif;
+    background-color: rgb(182, 199, 227);
+    background-image: linear-gradient(to bottom, rgb(182, 199, 227), rgb(246, 248, 252));
+}
+
+
+ 
+
+header
+{
+    opacity: 0;
+    animation-name: fadeBounce;
+    animation-fill-mode: forwards;
+    animation-duration: .5s;
+    text-align: center;
+    
+}
+.top
+{ padding: 20px 40px ;
+    opacity: 0;
+    animation: fadeBounce .5s .35s forwards;
+    text-align: center;
+    border-radius: 50px;
+    background-color: rgb(146, 183, 244);
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+h1
+{
+    opacity: 0;
+    animation: fadeBounce .5s .35s forwards;
+    color: rgb(57, 89, 128);
+    padding-top: 100px;
+    text-align: center;
+    text-shadow: 2px 2px 3px rgb(255,255,255);
+}
+
+body .pic
+{   opacity: 0;
+    animation: fadeBounce .5s .25s forwards;
+    
+    width: 50%;
+    height: auto;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  
+}
+.resume
+{ padding: 20px 40px ;
+    opacity: 0;
+    animation: fadeBounce .5s .35s forwards;
+    text-align: center;
+    border-radius: 50px;
+    background-color: #FFF;
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+body .firstarea
+{
+    
+    padding: 20px 40px ;
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(182, 199, 227);
+    border-radius: 50px;
+    box-sizing: border-box;
+}
+.leftcol
+{
+    opacity: 0;
+    animation: fadeBounce 1s .5s forwards;
+    
+    
+    padding: 20px 40px ;
+    
+    
+    
+    text-align: center;
+    box-sizing: border-box;
+   
+  
+   
+}
+
+
+.skills
+{
+    opacity: 0;
+    animation: fadeBounce .5s .25s forwards;
+    text-align: left;
+    flex: 1;
+    padding: 20px 40px ;
+    
+    
+}
+.education
+{
+    opacity: 0;
+    animation: fadeBounce .75s .35s forwards;
+    padding: 20px 40px ;
+    background-color: #FFF;
+    flex: 1;
+    border-radius: 20px;
+    
+}
+
+
+
+.secondmain
+{
+    
+    padding: 20px 40px ;
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(182, 199, 227);
+    border-radius: 50px;
+    box-sizing: border-box;
+}
+.work-1
+{
+    opacity: 0;
+    animation: fadeBounce .5s .75s forwards;
+    padding: 20px 40px ;
+    text-align: center;
+    flex: 2;
+}
+.work-2
+{
+    opacity: 0;
+    animation: fadeBounce .5s .75s forwards;
+    padding: 20px 40px ;
+    text-align: center;
+    flex: 1;
+}
+@media screen and (min-width:720px)
+{
+    body .pic
+    {
+    width: 30%;
+    
+  
+    }
+
+
+    body .firstarea{
+        display: flex;
+        
+    }
+     .secondmain{
+        display: flex;
+       
+    }
+    
+}
+
+@media screen and (min-width:1000px)
+{
+    body .pic
+    {
+        width: 25%;
+        
+      
+    }
+    body .mainarea{
+        display: flex;
+        max-width: 1300px;
+    }
+    body .secondarea{
+        display: flex;
+        max-width: 1300px;
+    }
+    
+}
+ .ig
+{
+  width: 10%;
+    height: auto;
+    
+  
+  
+}
+
+ .linkedin
+{
+  margin-left: auto;
+  width: 10%;
+    height: auto;
+    
+  
+  
+}
+ .github
+{
+  margin-left: auto;
+  width: 10%;
+    height: auto;
+   
+    
+  
+  
+}
+
+/*
+project page
+
+*/
+.projecthead
+{
+  
+  text-align: center;
+  font-size: 200%;
+  color: #173b6c;
+  
+}
+.projectbody
+{
+  background-color: rgb(246, 248, 252); 
+  
+  padding: 20%;
+  font-size: 115%;
+  
+}
+
+.pro
+{
+   
+   background-color: rgb(182, 199, 227);
+}
+
+
+
+
+

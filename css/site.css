@@ -8,11 +8,13 @@ h1{
     
 }
 
+
 header{
     text-align: left;
     font-weight: 100;
     
     background-color: rgb(182, 199, 227);
+    
     margin-bottom: 10px;
 }
 body
@@ -20,7 +22,7 @@ body
     
    
   background-color: rgb(182, 199, 227);
-    
+  
     
 }
 
@@ -29,6 +31,8 @@ body
 .resume
 {
   background-color: rgb(246, 248, 252);
+ 
+
 }
 
 
@@ -55,6 +59,7 @@ body
   margin-right: auto;
   
 }
+
 
 
 .socials .ig
@@ -86,27 +91,6 @@ body
   
 }
 
-.projecthead
-{
-  
-  text-align: center;
-  font-size: 200%;
-  color: #173b6c;
-  
-}
-.projectbody
-{
-  background-color: rgb(246, 248, 252); 
-  padding: 20%;
-  font-size: 115%;
-  
-}
-
-.pro
-{
-   
-   background-color: rgb(182, 199, 227);
-}
 
 
 
