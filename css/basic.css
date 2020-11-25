@@ -80,10 +80,20 @@ h1
 {
     opacity: 0;
     animation: fadeBounce .5s .35s forwards;
-    color: rgb(57, 89, 128);
-    padding-top: 100px;
+    color: #36619d;
+    padding-top: 2px;
     text-align: center;
-    text-shadow: 2px 2px 3px rgb(149, 144, 235);
+    
+}
+h2
+{
+    opacity: 0;
+    animation: fadeBounce .5s .35s forwards;
+    color:#36619d;
+    padding-top: 0px;
+    text-align: center;
+    font-size: 250% !important;
+   
 }
 
 body .pic
