@@ -45,16 +45,21 @@ body
     background-color: rgb(204, 220, 247);
    
 }
+.top-bar
+{
+    opacity: 0;
+    animation: fadeBounce .5s .35s forwards;
+}
 
-
+.lead
+{
+    text-align: center;
+}
  
 
 header
 {
-    opacity: 0;
-    animation-name: fadeBounce;
-    animation-fill-mode: forwards;
-    animation-duration: .5s;
+    animation: fadeBounce .5s .35s forwards;
     text-align: center;
     
 }
@@ -92,6 +97,11 @@ body .pic
   margin-right: auto;
   border-radius: 20px;
   
+}
+.about
+{
+    opacity: 0;
+    animation: fadeBounce .5s .25s forwards; 
 }
 .resume
 { padding: 20px 40px ;
