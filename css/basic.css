@@ -407,6 +407,16 @@ project page
   font-size: 115%;
   
 }
+.snakegame
+{
+    
+    
+    height: auto;
+    display: block; 
+	width: 100%; 
+	margin: 0 auto;  
+     
+}
 
 .pro
 {
