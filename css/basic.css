@@ -409,11 +409,12 @@ project page
 }
 .snakegame
 {
-    
+    opacity: 0;
+    animation: fadeBounce .5s .35s forwards;
     
     height: auto;
     display: block; 
-	width: 100%; 
+	width: 50%; 
 	margin: 0 auto;  
      
 }
