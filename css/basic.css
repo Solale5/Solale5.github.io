@@ -293,6 +293,7 @@ body .firstarea
 
     .parallax
     {
+        
         display: block;
         opacity: 0;
         animation: fadeBounce .5s .35s forwards;
@@ -307,6 +308,7 @@ body .firstarea
     }
     .parallax2
     {
+        border-radius: 50px;
         display: block;
         opacity: 0;
         animation: fadeBounce .5s .35s forwards;
