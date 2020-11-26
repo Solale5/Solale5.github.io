@@ -303,7 +303,21 @@ body .firstarea
         background-size: cover;
         background-position: top;
         background-attachment: fixed;
-        height: 800px;
+        height: 600px;
+    }
+    .parallax2
+    {
+        display: block;
+        opacity: 0;
+        animation: fadeBounce .5s .35s forwards;
+        text-align: center;
+        width: 100%;
+        height: auto;
+        background: url("../images/IMG_4002.jpg") top center;
+        background-size: cover;
+        background-position:  center;
+        background-attachment: fixed;
+        height: 300px;
     }
      
     .ig
