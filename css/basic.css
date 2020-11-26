@@ -117,6 +117,19 @@ body .pic
 { padding: 20px 40px ;
     opacity: 0;
     animation: fadeBounce .5s .35s forwards;
+    
+    border-radius: 50px;
+    background-color:  rgb(225, 232, 244);
+    
+    max-width: 1040px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+.Activities-Honors
+{ padding: 20px 40px ;
+    opacity: 0;
+    animation: fadeBounce .5s .35s forwards;
     text-align: center;
     border-radius: 50px;
     background-color:  rgb(225, 232, 244);
@@ -188,6 +201,10 @@ body .firstarea
     background-color:  rgb(225, 232, 244);
     border-radius: 50px;
     box-sizing: border-box;
+}
+.left-align
+{
+    text-align: left;
 }
 .work-1
 {
