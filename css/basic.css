@@ -1,7 +1,7 @@
 html
 {
-    background-color: rgb(182, 199, 227);
-    background-image: linear-gradient(to bottom, rgb(59, 103, 174), rgb(246, 248, 252));
+    background-color: rgb(36, 52, 63);
+    
 }
 
 @keyframes fadeBounce
@@ -38,11 +38,20 @@ html
         transform: translateY(0);
     }
 }
+
+.top-bar
+{
+
+    opacity: 0;
+    animation: fadeBounce .5s .35s forwards;
+    
+}
 body
 {
     
     
-    background-color: rgb(204, 220, 247);
+    background-color:white;
+   
    
 }
 
@@ -87,7 +96,8 @@ h2
 }
 
 body .pic
-{   opacity: 0;
+{   
+    opacity: 0;
     animation: fadeBounce .5s .25s forwards;
     
     width: 50%;
@@ -104,12 +114,13 @@ body .pic
     animation: fadeBounce .5s .25s forwards; 
 }
 .resume
-{ padding: 20px 40px ;
+{ 
+    
     opacity: 0;
     animation: fadeBounce .5s .35s forwards;
-    
+    padding: 20px 40px ;
     border-radius: 50px;
-    background-color:  rgb(225, 232, 244);
+    background-color: white;
     
     max-width: 1040px;
     margin-left: auto;
@@ -117,12 +128,13 @@ body .pic
     box-sizing: border-box;
 }
 .Activities-Honors
-{ padding: 20px 40px ;
+{
+     padding: 20px 40px ;
     opacity: 0;
     animation: fadeBounce .5s .35s forwards;
     text-align: center;
     border-radius: 50px;
-    background-color:  rgb(225, 232, 244);
+    background-color: white;
     
     max-width: 1040px;
     margin-left: auto;
@@ -133,10 +145,10 @@ body .firstarea
 {
     
     padding: 20px 40px ;
-    max-width: 1040px;
+    
     margin-left: auto;
     margin-right: auto;
-    background-color:  rgb(225, 232, 244);
+    background-color: white;
     border-radius: 50px;
     box-sizing: border-box;
 }
@@ -178,7 +190,13 @@ body .firstarea
     border-radius: 20px;
     
 }
-
+body
+{
+    background: url("../images/pexels-photo-531880.jpeg") top center;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+}
 
 
 .secondmain
@@ -188,7 +206,7 @@ body .firstarea
     max-width: 1040px;
     margin-left: auto;
     margin-right: auto;
-    background-color:  rgb(225, 232, 244);
+    background-color: white;
     border-radius: 50px;
     box-sizing: border-box;
 }
@@ -221,7 +239,7 @@ body .firstarea
         animation: fadeBounce .5s .35s forwards;
         text-align: center;
         border-radius: 50px;
-        background-color:  rgb(225, 232, 244);
+        
        
         max-width: 1040px;
         margin-left: auto;
@@ -270,6 +288,13 @@ body .firstarea
 
 @media screen and (min-width:720px)
 {
+   
+    .resume, .skills, .education, .firstarea, .work-1, .work-2, .secondmain,.Activities-Honors
+    {
+        background-color: white;
+        max-width: 90%;
+        border-radius: 0px !important;
+    }
     body .pic
     {
     width: 55%;
@@ -290,21 +315,25 @@ body .firstarea
         display: flex;
        
     }
+    
 
     .parallax
     {
+        background: url("../images/IMG_2713.jpg")  ;
         
         display: block;
         opacity: 0;
         animation: fadeBounce .5s .35s forwards;
-        text-align: center;
+       
         width: 100%;
         height: auto;
-        background: url("../images/IMG_4665.jpg") top center;
+    
         background-size: cover;
-        background-position: top;
+        background-repeat: no-repeat;
+        background-position: top center;
         background-attachment: fixed;
         height: 600px;
+       
     }
     .parallax2
     {
@@ -474,7 +503,7 @@ project page
     animation: fadeBounce .5s .35s forwards;
     
     border-radius: 50px;
-    background-color:  rgb(225, 232, 244);
+    background-color: white;
     
     max-width: 1040px;
     margin-left: auto;
@@ -507,11 +536,7 @@ h3
     font-size: 150% ;
 }
 
-.pro
-{
-   
-   background-color: rgb(182, 199, 227);
-}
+
 .img1
 {
     opacity: 0;
