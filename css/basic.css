@@ -399,14 +399,29 @@ project page
   color: #173b6c;
   
 }
-.projectbody
+.projectbody, .snakegamedescribe
 {
   
   
-  padding: 20%;
+  padding: 10%;
   font-size: 115%;
   
 }
+.frame
+{ 
+    padding: 20px 40px ;
+    opacity: 0;
+    animation: fadeBounce .5s .35s forwards;
+    
+    border-radius: 50px;
+    background-color:  rgb(225, 232, 244);
+    
+    max-width: 1040px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
 .snakegame
 {
     opacity: 0;
@@ -414,9 +429,22 @@ project page
     
     height: auto;
     display: block; 
-	width: 50%; 
+	width: 70%; 
 	margin: 0 auto;  
      
+}
+.snakelink
+{
+    text-align: center;
+}
+h3
+{
+    opacity: 0;
+    animation: fadeBounce .5s .35s forwards;
+    color:#36619d;
+    padding-top: 0px;
+    text-align: center;
+    font-size: 150% ;
 }
 
 .pro
