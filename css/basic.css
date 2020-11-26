@@ -45,37 +45,27 @@ body
     background-color: rgb(204, 220, 247);
    
 }
-.top-bar
-{
-    opacity: 0;
-    animation: fadeBounce .5s .35s forwards;
-}
+
+
+
 
 .lead
 {
+    opacity: 0;
+    animation: fadeBounce .5s .35s forwards;
     text-align: center;
 }
  
 
 header
 {
+    opacity: 0;
     animation: fadeBounce .5s .35s forwards;
     text-align: center;
     
 }
-.top
-{ padding: 20px 40px ;
-    opacity: 0;
-    animation: fadeBounce .5s .35s forwards;
-    text-align: center;
-    border-radius: 50px;
-    background-color:  rgb(225, 232, 244);
-   
-    max-width: 1040px;
-    margin-left: auto;
-    margin-right: auto;
-    box-sizing: border-box;
-}
+
+
 h1
 {
     opacity: 0;
@@ -222,6 +212,23 @@ body .firstarea
     text-align: center;
     flex: 1;
 }
+@media screen and (max-width: 700px)
+{
+    .top
+    { 
+        padding: 20px 40px ;
+        opacity: 0;
+        animation: fadeBounce .5s .35s forwards;
+        text-align: center;
+        border-radius: 50px;
+        background-color:  rgb(225, 232, 244);
+       
+        max-width: 1040px;
+        margin-left: auto;
+        margin-right: auto;
+        box-sizing: border-box;
+    }  
+}
 @media screen and (min-width: 200px)
 {
     body .pic
@@ -230,6 +237,7 @@ body .firstarea
     
   
     }
+
     .ig
     {
       width: 20%;
@@ -269,6 +277,10 @@ body .firstarea
   
     }
 
+    .top
+    {
+        display: none;
+    }
 
     body .firstarea{
         display: flex;
@@ -277,6 +289,21 @@ body .firstarea
      .secondmain{
         display: flex;
        
+    }
+
+    .parallax
+    {
+        display: block;
+        opacity: 0;
+        animation: fadeBounce .5s .35s forwards;
+        text-align: center;
+        width: 100%;
+        height: auto;
+        background: url("../images/IMG_4665.jpg") top center;
+        background-size: cover;
+        background-position: top;
+        background-attachment: fixed;
+        height: 800px;
     }
      
     .ig
