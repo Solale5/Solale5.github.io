@@ -103,9 +103,13 @@ body .pic
     width: 50%;
     height: auto;
     display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0px;
+     width: 200px; /* width of container */
+    height: 250px; /* height of container */
+    object-fit: cover;
+    object-position: 20% 10%; 
   
 }
 .about
@@ -192,10 +196,7 @@ body .firstarea
 }
 body
 {
-    background: url("../images/pexels-photo-531880.jpeg") top center;
-    background-size: cover;
-    background-position: top;
-    background-attachment: fixed;
+   background-color: white;
 }
 
 
@@ -300,6 +301,14 @@ body
     width: 55%;
     
   
+    }
+    
+    body
+    {
+        background: url("../images/pexels-photo-531880.jpeg") top center;
+        background-size: cover;
+        background-position: top;
+        background-attachment: fixed;
     }
 
     .top
