@@ -100,16 +100,7 @@ body .pic
     opacity: 0;
     animation: fadeBounce .5s .25s forwards;
     
-    width: 50%;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 0px;
-     width: 200px; 
-    height: 250px; 
-    object-fit: cover;
-    object-position: 20% 10%; 
+    
   
 }
 .about
@@ -299,9 +290,9 @@ body
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 0px;
-   
-    height: 340; 
+    
+    background-position: center;
+    
     object-fit: cover;
     object-position: 20% 10%; 
     }
@@ -359,7 +350,7 @@ body
 
     .parallax
     {
-        background: url("../images/IMG_2713.jpg")  ;
+        background: url("../images/IMG_2713\ copy.jpg")  ;
         
         display: block;
         opacity: 0;
@@ -370,9 +361,9 @@ body
     
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: top center;
+        background-position:  center;
         background-attachment: fixed;
-        height: 600px;
+        height: 800px;
        
     }
     .parallax2
