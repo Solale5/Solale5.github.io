@@ -1,590 +1,428 @@
-html
-{
-    background-color: rgb(36, 52, 63);
-    
+html {
+  background-color: rgb(36, 52, 63);
 }
 
-@keyframes fadeBounce
-{
-    0%
-    {
-        opacity: 0;
-        transform: translateY(-200%);
-    }
-    40%
-    {
-        
-        transform: translateY(0);
-    }
-    55%
-    {
-        opacity: 1;
-        transform: translateY(-8px);
-    }
-    70%
-    {
-        
-        transform: translateY(0);
-    }
-    85%
-    {
-        opacity: 1;
-        transform: translateY(-4px);
-    }
-
-    100%
-    {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.top-bar
-{
-
+@keyframes fadeBounce {
+  0% {
     opacity: 0;
-    animation: fadeBounce .5s .35s forwards;
-    
+    transform: translateY(-200%);
+  }
+  40% {
+    transform: translateY(0);
+  }
+  55% {
+    opacity: 1;
+    transform: translateY(-8px);
+  }
+  70% {
+    transform: translateY(0);
+  }
+  85% {
+    opacity: 1;
+    transform: translateY(-4px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
-body
-{
-    
-    
-    background-color:rgb(57, 73, 55);
-   
-   
+
+.top-bar {
+  opacity: 0;
+  animation: fadeBounce 0.5s 0.35s forwards;
+}
+body {
+  background-color: rgb(57, 73, 55);
 }
 
+.lead {
+  opacity: 0;
+  animation: fadeBounce 0.5s 0.35s forwards;
+  text-align: center;
+}
 
+header {
+  opacity: 0;
+  animation: fadeBounce 0.5s 0.35s forwards;
+  text-align: center;
+}
 
+h1 {
+  opacity: 0;
+  animation: fadeBounce 0.5s 0.35s forwards;
+  color: #36619d;
+  padding-top: 2px;
+  text-align: center;
+}
+h2 {
+  opacity: 0;
+  animation: fadeBounce 0.5s 0.35s forwards;
+  color: #36619d;
+  padding-top: 0px;
+  text-align: center;
+  font-size: 250% !important;
+}
 
-.lead
-{
+body .pic {
+  opacity: 0;
+  animation: fadeBounce 0.5s 0.25s forwards;
+}
+.about {
+  opacity: 0;
+  animation: fadeBounce 0.5s 0.25s forwards;
+}
+.resume {
+  opacity: 0;
+  animation: fadeBounce 0.5s 0.35s forwards;
+  padding: 20px 40px;
+  border-radius: 50px;
+  background-color: white;
+
+  max-width: 1040px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+.Activities-Honors {
+  padding: 20px 40px;
+  opacity: 0;
+  animation: fadeBounce 0.5s 0.35s forwards;
+  text-align: center;
+  border-radius: 50px;
+  background-color: white;
+
+  max-width: 1040px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+body .firstarea {
+  padding: 20px 40px;
+
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  border-radius: 50px;
+  box-sizing: border-box;
+}
+.leftcol {
+  opacity: 0;
+  animation: fadeBounce 1s 0.5s forwards;
+
+  padding: 20px 40px;
+
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.skills {
+  opacity: 0;
+  animation: fadeBounce 0.5s 0.25s forwards;
+  text-align: left;
+  flex: 1;
+  padding: 20px 40px;
+}
+.education {
+  opacity: 0;
+  animation: fadeBounce 0.75s 0.35s forwards;
+  padding: 20px 40px;
+
+  flex: 1;
+  border-radius: 20px;
+}
+body {
+  background-color: white;
+}
+
+.secondmain {
+  padding: 20px 40px;
+  max-width: 1040px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  border-radius: 50px;
+  box-sizing: border-box;
+}
+.left-align {
+  text-align: left;
+}
+.work-1 {
+  opacity: 0;
+  animation: fadeBounce 0.5s 0.75s forwards;
+  padding: 20px 40px;
+  text-align: center;
+  flex: 2;
+}
+.work-2 {
+  opacity: 0;
+  animation: fadeBounce 0.5s 0.75s forwards;
+  padding: 20px 40px;
+  text-align: center;
+  flex: 1;
+}
+@media screen and (max-width: 700px) {
+  .top {
+    padding: 20px 40px;
     opacity: 0;
-    animation: fadeBounce .5s .35s forwards;
+    animation: fadeBounce 0.5s 0.35s forwards;
     text-align: center;
-}
- 
-
-header
-{
-    opacity: 0;
-    animation: fadeBounce .5s .35s forwards;
-    text-align: center;
-    
-}
-
-
-h1
-{
-    opacity: 0;
-    animation: fadeBounce .5s .35s forwards;
-    color: #36619d;
-    padding-top: 2px;
-    text-align: center;
-    
-}
-h2
-{
-    opacity: 0;
-    animation: fadeBounce .5s .35s forwards;
-    color:#36619d;
-    padding-top: 0px;
-    text-align: center;
-    font-size: 250% !important;
-   
-}
-
-body .pic
-{   
-    opacity: 0;
-    animation: fadeBounce .5s .25s forwards;
-    
-    
-  
-}
-.about
-{
-    opacity: 0;
-    animation: fadeBounce .5s .25s forwards; 
-}
-.resume
-{ 
-    
-    opacity: 0;
-    animation: fadeBounce .5s .35s forwards;
-    padding: 20px 40px ;
     border-radius: 50px;
-    background-color: white;
-    
+
     max-width: 1040px;
     margin-left: auto;
     margin-right: auto;
     box-sizing: border-box;
+  }
 }
-.Activities-Honors
-{
-     padding: 20px 40px ;
-    opacity: 0;
-    animation: fadeBounce .5s .35s forwards;
-    text-align: center;
-    border-radius: 50px;
-    background-color: white;
-    
-    max-width: 1040px;
-    margin-left: auto;
-    margin-right: auto;
-    box-sizing: border-box;
-}
-body .firstarea
-{
-    
-    padding: 20px 40px ;
-    
-    margin-left: auto;
-    margin-right: auto;
-    background-color: white;
-    border-radius: 50px;
-    box-sizing: border-box;
-}
-.leftcol
-{
-    opacity: 0;
-    animation: fadeBounce 1s .5s forwards;
-    
-    
-    padding: 20px 40px ;
-    
-    
-    
-    text-align: center;
-    box-sizing: border-box;
-   
-  
-   
-}
-
-
-.skills
-{
-    opacity: 0;
-    animation: fadeBounce .5s .25s forwards;
-    text-align: left;
-    flex: 1;
-    padding: 20px 40px ;
-    
-    
-}
-.education
-{
-    opacity: 0;
-    animation: fadeBounce .75s .35s forwards;
-    padding: 20px 40px ;
-   
-    flex: 1;
-    border-radius: 20px;
-    
-}
-body
-{
-   background-color: white;
-}
-
-
-.secondmain
-{
-    
-    padding: 20px 40px ;
-    max-width: 1040px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: white;
-    border-radius: 50px;
-    box-sizing: border-box;
-}
-.left-align
-{
-    text-align: left;
-}
-.work-1
-{
-    opacity: 0;
-    animation: fadeBounce .5s .75s forwards;
-    padding: 20px 40px ;
-    text-align: center;
-    flex: 2;
-}
-.work-2
-{
-    opacity: 0;
-    animation: fadeBounce .5s .75s forwards;
-    padding: 20px 40px ;
-    text-align: center;
-    flex: 1;
-}
-@media screen and (max-width: 700px)
-{
-    .top
-    { 
-        padding: 20px 40px ;
-        opacity: 0;
-        animation: fadeBounce .5s .35s forwards;
-        text-align: center;
-        border-radius: 50px;
-        
-       
-        max-width: 1040px;
-        margin-left: auto;
-        margin-right: auto;
-        box-sizing: border-box;
-    }  
-}
-@media screen and (min-width: 200px)
-{
-    body .pic
-    {
+@media screen and (min-width: 200px) {
+  body .pic {
     width: 85%;
-    
-  
-    }
+  }
 
-    .ig
-    {
-      width: 20%;
-        height: auto;
-        
-      
-      
-    }
-    
-     .linkedin
-    {
-      margin-left: auto;
-      width: 20%;
-        height: auto;
-        
-      
-      
-    }
-     .github
-    {
-      margin-left: auto;
-      width: 20%;
-        height: auto;
-       
-        
-      
-      
-    }
+  .ig {
+    width: 20%;
+    height: auto;
+  }
+
+  .linkedin {
+    margin-left: auto;
+    width: 20%;
+    height: auto;
+  }
+  .github {
+    margin-left: auto;
+    width: 20%;
+    height: auto;
+  }
 }
 
-@media screen and (min-width:700px)
-{
-    body .pic
-    {
-        opacity: 0;
-    animation: fadeBounce .5s .25s forwards;
-    
+@media screen and (min-width: 700px) {
+  body .pic {
+    opacity: 0;
+    animation: fadeBounce 0.5s 0.25s forwards;
+
     width: 80%;
     height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    
+
     background-position: center;
-    
+
     object-fit: cover;
-    object-position: 20% 10%; 
-    }
-    body
-    {
-        background: url("../images/pexels-photo-531880.jpeg") top center;
-        background-size: cover;
-        background-position: top;
-        background-attachment: fixed;
-    }
-   
-    
-   
+    object-position: 20% 10%;
+  }
+  body {
+    background: url("../images/pexels-photo-531880.jpeg") top center;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+  }
 }
 
-
-@media screen and (min-width:1025px)
-{
-   
-    .resume, .skills, .education, .firstarea, .work-1, .work-2, .secondmain,.Activities-Honors, .aboutmebody
-    {
-        background-color: white;
-        max-width: 90%;
-        border-radius: 0px !important;
-    }
-    body .pic
-    {
+@media screen and (min-width: 1025px) {
+  .resume,
+  .skills,
+  .education,
+  .firstarea,
+  .work-1,
+  .work-2,
+  .secondmain,
+  .Activities-Honors,
+  .aboutmebody {
+    background-color: white;
+    max-width: 90%;
+    border-radius: 0px !important;
+  }
+  body .pic {
     width: 55%;
-    
-  
-    }
+  }
 
-    .aboutmebody
-    {
-       margin: auto;
-    }
-    
-    body
-    {
-        background: url("../images/pexels-photo-531880.jpeg") top center;
-        background-size: cover;
-        background-position: top;
-        background-attachment: fixed;
-    }
+  .aboutmebody {
+    margin: auto;
+  }
 
-    .top
-    {
-        display: none;
-    }
+  body {
+    background: url("../images/pexels-photo-531880.jpeg") top center;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+  }
 
-    body .firstarea{
-        display: flex;
-        
-    }
-     .secondmain{
-        display: flex;
-       
-    }
-    
+  .top {
+    display: none;
+  }
 
-    .parallax
-    {
-        background: url("../images/IMG_2713\ copy.jpg")  ;
-        
-        display: block;
-        opacity: 0;
-        animation: fadeBounce .5s .35s forwards;
-       
-        width: 100%;
-        height: auto;
-    
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position:  center;
-        background-attachment: fixed;
-        height: 800px;
-       
-    }
-    .parallax2
-    {
-        border-radius: 50px;
-        display: block;
-        opacity: 0;
-        animation: fadeBounce .5s .35s forwards;
-        text-align: center;
-        width: 100%;
-        height: auto;
-        background: url("../images/IMG_4002.jpg") top center;
-        background-size: cover;
-        background-position:  center;
-        background-attachment: fixed;
-        height: 300px;
-    }
-     
-    .ig
-    {
-      width: 10%;
-        height: auto;
-        
-      
-      
-    }
-    
-     .linkedin
-    {
-      margin-left: auto;
-      width: 10%;
-        height: auto;
-        
-      
-      
-    }
-     .github
-    {
-      margin-left: auto;
-      width: 10%;
-        height: auto;
-       
-        
-      
-      
-    }
+  body .firstarea {
+    display: flex;
+  }
+  .secondmain {
+    display: flex;
+  }
+
+  .parallax {
+    background: url("../images/IMG_2713\ copy.jpg");
+
+    display: block;
+    opacity: 0;
+    animation: fadeBounce 0.5s 0.35s forwards;
+
+    width: 100%;
+    height: auto;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 800px;
+  }
+  .parallax2 {
+    border-radius: 50px;
+    display: block;
+    opacity: 0;
+    animation: fadeBounce 0.5s 0.35s forwards;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    background: url("../images/IMG_4002.jpg") top center;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 300px;
+  }
+
+  .ig {
+    width: 10%;
+    height: auto;
+  }
+
+  .linkedin {
+    margin-left: auto;
+    width: 10%;
+    height: auto;
+  }
+  .github {
+    margin-left: auto;
+    width: 10%;
+    height: auto;
+  }
 }
 
-@media screen and (min-width:1200px)
-{
-    body .pic
-    {
-        width: 45%;
-        
-      
-    }
-    body .mainarea{
-        display: flex;
-        max-width: 1200px;
-    }
-    body .secondarea{
-        display: flex;
-        max-width: 1200px;
-    }
-        .ig
-        {
-          width: 10%;
-            height: auto;
-            
-          
-          
-        }
-        
-         .linkedin
-        {
-          margin-left: auto;
-          width: 10%;
-            height: auto;
-            
-          
-          
-        }
-         .github
-        {
-          margin-left: auto;
-          width: 10%;
-            height: auto;
-           
-            
-          
-          
-        }
-    }
-    
+@media screen and (min-width: 1200px) {
+  body .pic {
+    width: 45%;
+  }
+  body .mainarea {
+    display: flex;
+    max-width: 1200px;
+  }
+  body .secondarea {
+    display: flex;
+    max-width: 1200px;
+  }
+  .ig {
+    width: 10%;
+    height: auto;
+  }
 
-@media screen and (min-width:1600px)
-{
-    body .pic
-    {
-        width: 45%;
-        
-      
-    }
-    body .mainarea{
-        display: flex;
-        max-width: 2000px;
-    }
-    body .secondarea{
-        display: flex;
-        max-width: 2000px;
-    }
-    .ig
-    {
-      width: 10%;
-        height: auto;
-        
-      
-      
-    }
-    
-     .linkedin
-    {
-      margin-left: auto;
-      width: 10%;
-        height: auto;
-        
-      
-      
-    }
-     .github
-    {
-      margin-left: auto;
-      width: 10%;
-        height: auto;
-       
-        
-      
-      
-    }
-    
+  .linkedin {
+    margin-left: auto;
+    width: 10%;
+    height: auto;
+  }
+  .github {
+    margin-left: auto;
+    width: 10%;
+    height: auto;
+  }
 }
 
+@media screen and (min-width: 1600px) {
+  body .pic {
+    width: 45%;
+  }
+  body .mainarea {
+    display: flex;
+    max-width: 2000px;
+  }
+  body .secondarea {
+    display: flex;
+    max-width: 2000px;
+  }
+  .ig {
+    width: 10%;
+    height: auto;
+  }
+
+  .linkedin {
+    margin-left: auto;
+    width: 10%;
+    height: auto;
+  }
+  .github {
+    margin-left: auto;
+    width: 10%;
+    height: auto;
+  }
+}
 
 /*
 project page
 
 */
-.projecthead
-{
-  
+.projecthead {
   text-align: center;
   font-size: 200%;
   color: #173b6c;
-  
 }
-.projectbody, .snakegamedescribe
-{
-  
-  
+.projectbody,
+.snakegamedescribe {
   padding: 10%;
   font-size: 115%;
-  
 }
-.frame
-{ 
-    padding: 20px 40px ;
-    opacity: 0;
-    animation: fadeBounce .5s .35s forwards;
-    
-    border-radius: 50px;
-    background-color: white;
-    
-    max-width: 1040px;
-    margin-left: auto;
-    margin-right: auto;
-    box-sizing: border-box;
+.frame {
+  padding: 20px 40px;
+  opacity: 0;
+  animation: fadeBounce 0.5s 0.35s forwards;
+
+  border-radius: 50px;
+  background-color: white;
+
+  max-width: 1040px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
 }
 
-.snakegame
-{
-    opacity: 0;
-    animation: fadeBounce .5s .35s forwards;
-    
-    height: auto;
-    display: block; 
-	width: 70%; 
-	margin: 0 auto;  
-     
+.snakegame {
+  opacity: 0;
+  animation: fadeBounce 0.5s 0.35s forwards;
+
+  height: auto;
+  display: block;
+  width: 70%;
+  margin: 0 auto;
 }
-.snakelink
-{
-    text-align: center;
+.snakelink,
+.link {
+  text-align: center;
 }
-h3
-{
-    opacity: 0;
-    animation: fadeBounce .5s .35s forwards;
-    color:#36619d;
-    padding-top: 0px;
-    text-align: center;
-    font-size: 150% ;
+h3 {
+  opacity: 0;
+  animation: fadeBounce 0.5s 0.35s forwards;
+  color: #36619d;
+  padding-top: 0px;
+  text-align: center;
+  font-size: 150%;
 }
 
-
-.img1
-{
-    opacity: 0;
-    animation: fadeBounce .5s .25s forwards;
-    display: block;
-    width: auto;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-
+.img1 {
+  opacity: 0;
+  animation: fadeBounce 0.5s 0.25s forwards;
+  display: block;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
 }
-
-
-
-

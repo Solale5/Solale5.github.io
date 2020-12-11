@@ -1,0 +1,35 @@
+h1,
+h3 {
+  text-align: center;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 40px;
+
+  box-sizing: border-box;
+}
+
+.btn,
+.check {
+  background-color: rgb(197, 215, 242) !important;
+  display: block !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.lead {
+  display: block !important;
+  text-align: center !important;
+  margin-left: auto;
+}
+
+.percentOfTotalGrade,
+.myGrade,
+.desiredGrade {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
