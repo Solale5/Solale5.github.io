@@ -93,3 +93,13 @@ body {
     font-size: 1.4rem;
   }
 }
+
+@media screen and (max-width: 400px) {
+  .hero-text {
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+  }
+  .container p {
+    font-size: 0.9rem;
+  }
+}
