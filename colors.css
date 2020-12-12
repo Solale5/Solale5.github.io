@@ -64,7 +64,7 @@ body {
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+
   background-size: cover;
   position: relative;
 }

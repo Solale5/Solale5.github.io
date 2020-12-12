@@ -217,7 +217,6 @@ body {
     background: url("../images/pexels-photo-531880.jpeg") top center;
     background-size: cover;
     background-position: top;
-    background-attachment: fixed;
   }
 }
 
@@ -234,6 +233,9 @@ body {
     background-color: white;
     max-width: 90%;
     border-radius: 0px !important;
+  }
+  .hero-image {
+    background-attachment: fixed;
   }
   body .pic {
     width: 55%;
