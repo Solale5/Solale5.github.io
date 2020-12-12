@@ -22,7 +22,11 @@ body {
 }
 .container p span.typed-text {
   font-weight: 100;
-  color: #87b1ed;
+  color: #99c0f5;
+}
+.container .first {
+  font-weight: 100;
+  color: white;
 }
 .container p span.cursor {
   display: inline-block;
