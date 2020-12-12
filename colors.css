@@ -76,17 +76,18 @@ body {
 /* Place text in the middle of the image */
 .hero-text {
   text-align: center;
-  font-size: 3.2rem;
+  font-size: 5rem;
   position: absolute;
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+  white-space: nowrap;
 }
 
 @media screen and (max-width: 767px) {
   .hero-text {
-    font-size: 2rem;
+    font-size: 3rem;
     letter-spacing: 0.1rem;
   }
   .container p {
@@ -96,10 +97,10 @@ body {
 
 @media screen and (max-width: 400px) {
   .hero-text {
-    font-size: 1.5rem;
+    font-size: 1.9rem;
     letter-spacing: 0.1rem;
   }
   .container p {
-    font-size: 0.9rem;
+    font-size: 1.5rem;
   }
 }
