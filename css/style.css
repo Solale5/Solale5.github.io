@@ -1,0 +1,283 @@
+/*code for type effect start in hero section*/
+
+html {
+  height: 100%;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: white;
+  color: rgb(9, 0, 0);
+  height: 100%;
+}
+
+.container {
+  height: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container p {
+  font-size: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  overflow: hidden;
+}
+.container p span.typed-text {
+  font-weight: 100;
+  color: #fff;
+}
+.container .first {
+  font-weight: 100;
+  color: white;
+}
+.container p span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+.container p span.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0% {
+    background-color: #ccc;
+  }
+  49% {
+    background-color: #ccc;
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #ccc;
+  }
+}
+
+/*code for type effect END */
+
+.hero-image {
+  background-image: url("/images/IMG_2713.jpg");
+
+  /* Set a specific height */
+  height: 100%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  font-size: 5rem;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 767px) {
+  .hero-text {
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+  }
+  .container p {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .hero-text {
+    font-size: 1.9rem;
+    letter-spacing: 0.1rem;
+  }
+  .container p {
+    font-size: 1.5rem;
+  }
+}
+/* END HERO STYLING */
+
+/*GENERAL LAYOUT */
+body {
+  background: url("../images/sky2.jpg") top center;
+  background-size: cover;
+  background-repeat: inherit;
+}
+.super-container {
+  display: block;
+  background-color: #fff;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 60px;
+  box-sizing: border-box;
+}
+.super-container2 {
+  display: block;
+  background-color: #fff;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 60px;
+  box-sizing: border-box;
+  border-radius: 55 px;
+}
+
+.work-exp,
+.work-exp2,
+.skills,
+.education {
+  padding: 20px 60px;
+  box-sizing: border-box;
+}
+
+.section-title {
+  text-align: center;
+  color: #36619d;
+}
+.parallax2 {
+  display: block;
+  width: 100%;
+  height: 50%;
+  background: url("/images/IMG_4002.jpg") top center;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+/* START OF PROJECT AREA*/
+.hero-image2 {
+  background-image: url("/images/IMG_4002.jpg");
+
+  /* Set a specific height */
+  height: 100%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+
+  background-size: cover;
+  position: relative;
+}
+.snakegamedescribe {
+  padding: 10%;
+  font-size: 115%;
+}
+.snakelink,
+.link {
+  text-align: center;
+}
+.snakegame {
+  height: auto;
+  display: block;
+  width: 70%;
+  margin: 0 auto;
+}
+body .pic {
+  width: 80%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-position: center;
+
+  object-fit: cover;
+  object-position: 20% 10%;
+}
+.link {
+  font-size: 2rem;
+}
+/* START OF ABOUT ME*/
+.hero-image3 {
+  background-image: url("/images/IMG_2852.jpg");
+
+  /* Set a specific height */
+  height: 100%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: 25% 25%;
+  background-repeat: no-repeat;
+
+  background-size: cover;
+  position: relative;
+}
+
+@media screen and (min-width: 767px) {
+  .container1,
+  .container2 {
+    display: flex;
+  }
+  .skills,
+  .education {
+    flex: 1;
+  }
+  .ig {
+    width: 10%;
+    height: auto;
+  }
+
+  .linkedin {
+    margin-left: auto;
+    width: 10%;
+    height: auto;
+  }
+  .github {
+    margin-left: auto;
+    width: 10%;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .hero-image {
+    background-attachment: fixed;
+  }
+  .hero-image2 {
+    background-attachment: fixed;
+  }
+  .hero-image3 {
+    background-attachment: fixed;
+  }
+  .parallax2 {
+    background-attachment: fixed;
+  }
+  .parallax3 {
+    background-attachment: fixed;
+  }
+}
+@media screen and (min-width: 200px) {
+  .ig {
+    width: 90px;
+    height: auto;
+  }
+
+  .linkedin {
+    margin-left: auto;
+    width: 90px;
+    height: auto;
+  }
+  .github {
+    margin-left: auto;
+    width: 90px;
+    height: auto;
+  }
+}
+
+.Activities-Honors {
+  text-align: center;
+}
+.socials {
+  text-align: center;
+}
