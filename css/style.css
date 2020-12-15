@@ -115,30 +115,21 @@ body {
   background-size: cover;
   background-repeat: inherit;
 }
-.super-container {
-  display: block;
-  background-color: #fff;
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 20px 60px;
-  box-sizing: border-box;
-}
+.super-container,
 .super-container2 {
   display: block;
   background-color: #fff;
-  width: 90%;
   margin-left: auto;
   margin-right: auto;
-  padding: 20px 60px;
+  max-width: 100%;
   box-sizing: border-box;
-  border-radius: 55 px;
 }
 
 .work-exp,
 .work-exp2,
 .skills,
-.education {
+.education,
+.resume {
   padding: 20px 60px;
   box-sizing: border-box;
 }
@@ -147,15 +138,15 @@ body {
   text-align: center;
   color: #36619d;
 }
-.parallax2 {
-  display: block;
-  width: 100%;
-  height: 50%;
-  background: url("/images/IMG_4002.jpg") top center;
-  background-size: cover;
-  background-position: center;
-  z-index: 1;
+.ig,
+.linkedin,
+.github {
+  text-align: center;
+
+  width: 10%;
+  height: auto;
 }
+
 /* START OF PROJECT AREA*/
 .hero-image2 {
   background-image: url("/images/IMG_4002.jpg");
@@ -215,6 +206,19 @@ body .pic {
 }
 
 @media screen and (min-width: 767px) {
+  .super-container,
+  .super-container2 {
+    padding: 20px 60px;
+    max-width: 90%;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .hero-image,
+  .hero-image2,
+  .hero-image3 {
+    background-attachment: fixed;
+  }
   .container1,
   .container2 {
     display: flex;
@@ -223,61 +227,13 @@ body .pic {
   .education {
     flex: 1;
   }
-  .ig {
-    width: 10%;
-    height: auto;
-  }
-
-  .linkedin {
-    margin-left: auto;
-    width: 10%;
-    height: auto;
-  }
-  .github {
-    margin-left: auto;
-    width: 10%;
-    height: auto;
-  }
-}
-
-@media screen and (min-width: 1025px) {
-  .hero-image {
-    background-attachment: fixed;
-  }
-  .hero-image2 {
-    background-attachment: fixed;
-  }
-  .hero-image3 {
-    background-attachment: fixed;
-  }
-  .parallax2 {
-    background-attachment: fixed;
-  }
-  .parallax3 {
-    background-attachment: fixed;
-  }
-}
-@media screen and (min-width: 200px) {
-  .ig {
-    width: 90px;
-    height: auto;
-  }
-
-  .linkedin {
-    margin-left: auto;
-    width: 90px;
-    height: auto;
-  }
-  .github {
-    margin-left: auto;
-    width: 90px;
-    height: auto;
-  }
 }
 
 .Activities-Honors {
   text-align: center;
 }
-.socials {
+body .socials {
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
