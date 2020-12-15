@@ -129,8 +129,9 @@ body {
 .work-exp2,
 .skills,
 .education,
-.resume {
-  padding: 20px 60px;
+.resume,
+.container3 {
+  padding: 30px 40px;
   box-sizing: border-box;
 }
 
@@ -236,4 +237,6 @@ body .socials {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 20px;
+  box-sizing: border-box;
 }
