@@ -2,11 +2,18 @@
 
 html {
   height: 100%;
+
+  background-color: black;
+
+  background-image: linear-gradient(3deg, #0d3961 0%, #28313b 74%);
+  background-repeat: no-repeat;
 }
 body {
-  font-family: "Montserrat", sans-serif;
-  background-color: white;
-  color: rgb(9, 0, 0);
+  font-family: sans-serif;
+  background-image: #06a8ff;
+  background-color: black;
+
+  color: white;
   height: 100%;
 }
 
@@ -42,6 +49,42 @@ body {
 .container p span.cursor.typing {
   animation: none;
 }
+
+.arrow {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.arrow span {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-bottom: 5px solid #06a8ff;
+  border-right: 5px solid #06a8ff;
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: animate 2s infinite;
+}
+.arrow span:nth-child(2) {
+  animation-delay: -0.2s;
+}
+.arrow span:nth-child(3) {
+  animation-delay: -0.4s;
+}
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(20px, 20px);
+  }
+}
 @keyframes blink {
   0% {
     background-color: #ccc;
@@ -63,7 +106,7 @@ body {
 /*code for type effect END */
 
 .hero-image {
-  background-image: url("/images/IMG_2713.jpg");
+  background-image: url('/images/IMG_2713.jpg');
 
   /* Set a specific height */
   height: 100%;
@@ -110,15 +153,14 @@ body {
 /* END HERO STYLING */
 
 /*GENERAL LAYOUT */
-body {
-  background: url("../images/sky2.jpg") top center;
-  background-size: cover;
-  background-repeat: inherit;
-}
+
 .super-container,
 .super-container2 {
   display: block;
-  background-color: #fff;
+  background-color: black;
+
+  background-image: linear-gradient(3deg, #313d49 0%, #28313b 74%);
+  color: white;
   margin-left: auto;
   margin-right: auto;
   max-width: 100%;
@@ -137,7 +179,7 @@ body {
 
 .section-title {
   text-align: center;
-  color: #36619d;
+  color: #4f8bdf;
 }
 .ig,
 .linkedin,
@@ -150,7 +192,7 @@ body {
 
 /* START OF PROJECT AREA*/
 .hero-image2 {
-  background-image: url("/images/IMG_4002.jpg");
+  background-image: url('/images/IMG_4002.jpg');
 
   /* Set a specific height */
   height: 100%;
@@ -193,7 +235,7 @@ body .pic {
 }
 /* START OF ABOUT ME*/
 .hero-image3 {
-  background-image: url("/images/IMG_2852.jpg");
+  background-image: url('/images/IMG_2852.jpg');
 
   /* Set a specific height */
   height: 100%;
