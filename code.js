@@ -1,13 +1,13 @@
-"use strict";
+'use strict';
 
 // start of text section for typing
-const typedTextSpan = document.querySelector(".typed-text");
-const cursorSpan = document.querySelector(".cursor");
+const typedTextSpan = document.querySelector('.typed-text');
+const cursorSpan = document.querySelector('.cursor');
 
 const textArray = [
-  "a CS student",
-  "a basketball enthusiast",
-  "an aspiring developer;",
+  'a CS student',
+  'a basketball enthusiast',
+  'an aspiring developer;',
 ];
 const typingDelay = 100;
 const erasingDelay = 100;
@@ -17,21 +17,21 @@ let charIndex = 0;
 
 function type() {
   if (charIndex < textArray[textArrayIndex].length) {
-    if (!cursorSpan.classList.contains("typing"))
-      cursorSpan.classList.add("typing");
+    if (!cursorSpan.classList.contains('typing'))
+      cursorSpan.classList.add('typing');
     typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
     charIndex++;
     setTimeout(type, typingDelay);
   } else {
-    cursorSpan.classList.remove("typing");
+    cursorSpan.classList.remove('typing');
     setTimeout(erase, newTextDelay);
   }
 }
 
 function erase() {
   if (charIndex > 0) {
-    if (!cursorSpan.classList.contains("typing"))
-      cursorSpan.classList.add("typing");
+    if (!cursorSpan.classList.contains('typing'))
+      cursorSpan.classList.add('typing');
     typedTextSpan.textContent = textArray[textArrayIndex].substring(
       0,
       charIndex - 1
@@ -39,14 +39,55 @@ function erase() {
     charIndex--;
     setTimeout(erase, erasingDelay);
   } else {
-    cursorSpan.classList.remove("typing");
+    cursorSpan.classList.remove('typing');
     textArrayIndex++;
     if (textArrayIndex >= textArray.length) textArrayIndex = 0;
     setTimeout(type, typingDelay + 1100);
   }
 }
 
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener('DOMContentLoaded', function () {
   // On DOM Load initiate the effect
   if (textArray.length) setTimeout(type, newTextDelay + 250);
+});
+
+//select links in navbar and store in nodelist
+const resumeScroll = document.querySelectorAll('.navbar-nav a');
+
+//select resume section
+const resume = document.querySelector('#resume');
+//select project section
+const projects = document.querySelector('#projects');
+//select about section
+const about = document.querySelector('#about');
+// store links from three sections in nodelist
+const resumeLink = resumeScroll[0];
+const projectLink = resumeScroll[1];
+const aboutLink = resumeScroll[2];
+console.log(aboutLink);
+
+resumeLink.addEventListener('click', function () {
+  const s1coords = resume.getBoundingClientRect();
+  window.scrollTo({
+    left: s1coords.left + window.pageXOffset,
+    top: s1coords.top + window.pageYOffset,
+    behavior: 'smooth',
+  });
+});
+
+projectLink.addEventListener('click', function () {
+  const s1coords = projects.getBoundingClientRect();
+  window.scrollTo({
+    left: s1coords.left + window.pageXOffset,
+    top: s1coords.top + window.pageYOffset,
+    behavior: 'smooth',
+  });
+});
+aboutLink.addEventListener('click', function () {
+  const s1coords = about.getBoundingClientRect();
+  window.scrollTo({
+    left: s1coords.left + window.pageXOffset,
+    top: s1coords.top + window.pageYOffset,
+    behavior: 'smooth',
+  });
 });
