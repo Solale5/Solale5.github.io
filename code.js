@@ -50,44 +50,58 @@ document.addEventListener('DOMContentLoaded', function () {
   // On DOM Load initiate the effect
   if (textArray.length) setTimeout(type, newTextDelay + 250);
 });
+//my first very inefficient way of doing smooth scroll
+// //select links in navbar and store in nodelist
+// const resumeScroll = document.querySelectorAll('.navbar-nav a');
 
-//select links in navbar and store in nodelist
-const resumeScroll = document.querySelectorAll('.navbar-nav a');
+// //select resume section
+// const resume = document.querySelector('#resume');
+// //select project section
+// const projects = document.querySelector('#projects');
+// //select about section
+// const about = document.querySelector('#about');
+// // store links from three sections in nodelist
+// const resumeLink = resumeScroll[0];
+// const projectLink = resumeScroll[1];
+// const aboutLink = resumeScroll[2];
+// console.log(aboutLink);
 
-//select resume section
-const resume = document.querySelector('#resume');
-//select project section
-const projects = document.querySelector('#projects');
-//select about section
-const about = document.querySelector('#about');
-// store links from three sections in nodelist
-const resumeLink = resumeScroll[0];
-const projectLink = resumeScroll[1];
-const aboutLink = resumeScroll[2];
-console.log(aboutLink);
+// resumeLink.addEventListener('click', function () {
+//   const s1coords = resume.getBoundingClientRect();
+//   window.scrollTo({
+//     left: s1coords.left + window.pageXOffset,
+//     top: s1coords.top + window.pageYOffset,
+//     behavior: 'smooth',
+//   });
+// });
 
-resumeLink.addEventListener('click', function () {
-  const s1coords = resume.getBoundingClientRect();
-  window.scrollTo({
-    left: s1coords.left + window.pageXOffset,
-    top: s1coords.top + window.pageYOffset,
-    behavior: 'smooth',
-  });
-});
-
-projectLink.addEventListener('click', function () {
-  const s1coords = projects.getBoundingClientRect();
-  window.scrollTo({
-    left: s1coords.left + window.pageXOffset,
-    top: s1coords.top + window.pageYOffset,
-    behavior: 'smooth',
-  });
-});
-aboutLink.addEventListener('click', function () {
-  const s1coords = about.getBoundingClientRect();
-  window.scrollTo({
-    left: s1coords.left + window.pageXOffset,
-    top: s1coords.top + window.pageYOffset,
-    behavior: 'smooth',
-  });
+// projectLink.addEventListener('click', function () {
+//   const s1coords = projects.getBoundingClientRect();
+//   window.scrollTo({
+//     left: s1coords.left + window.pageXOffset,
+//     top: s1coords.top + window.pageYOffset,
+//     behavior: 'smooth',
+//   });
+// });
+// aboutLink.addEventListener('click', function () {
+//   const s1coords = about.getBoundingClientRect();
+//   window.scrollTo({
+//     left: s1coords.left + window.pageXOffset,
+//     top: s1coords.top + window.pageYOffset,
+//     behavior: 'smooth',
+//   });
+// });
+//best practice smooth scroll implementation
+document.querySelector('.navbar-nav').addEventListener('click', function (e) {
+  e.preventDefault();
+  if (e.target.classList.contains('nav-link')) {
+    const theid = e.target.getAttribute('href');
+    const id = document.querySelector(theid);
+    const s1coords = id.getBoundingClientRect();
+    window.scrollTo({
+      left: s1coords.left + window.pageXOffset,
+      top: s1coords.top + window.pageYOffset,
+      behavior: 'smooth',
+    });
+  }
 });
