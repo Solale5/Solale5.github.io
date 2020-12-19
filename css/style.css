@@ -202,7 +202,8 @@ body {
 
 /* START OF PROJECT AREA*/
 .hero-image2 {
-  background-image: url('/images/IMG_4002.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05)),
+    url('/images/IMG_4002.jpg');
 
   /* Set a specific height */
   height: 100%;
@@ -246,7 +247,8 @@ body .pic {
 }
 /* START OF ABOUT ME*/
 .hero-image3 {
-  background-image: url('/images/IMG_2852.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
+    url('/images/IMG_2852.jpg');
 
   /* Set a specific height */
   height: 100%;
