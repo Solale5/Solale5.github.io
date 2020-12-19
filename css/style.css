@@ -179,6 +179,7 @@ body {
 
 .section-title {
   text-align: center;
+  font-weight: 220;
   color: #4f8bdf;
 }
 .ig,
@@ -231,7 +232,8 @@ body .pic {
   object-position: 20% 10%;
 }
 .link {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  font-weight: 200;
 }
 /* START OF ABOUT ME*/
 .hero-image3 {
