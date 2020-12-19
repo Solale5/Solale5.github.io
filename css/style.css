@@ -176,6 +176,11 @@ body {
   padding: 30px 40px;
   box-sizing: border-box;
 }
+.container3 {
+  text-align: center;
+  padding: 40px 40px;
+  box-sizing: border-box;
+}
 
 .section-title {
   text-align: center;
