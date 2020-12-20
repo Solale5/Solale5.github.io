@@ -265,7 +265,7 @@ body .pic {
   .super-container,
   .super-container2 {
     padding: 20px 60px;
-    max-width: 90%;
+    max-width: 100%;
   }
 }
 
@@ -274,6 +274,11 @@ body .pic {
   .hero-image2,
   .hero-image3 {
     background-attachment: fixed;
+  }
+  .education .section-title,
+  .work-exp .section-title,
+  .work-exp2 .section-title {
+    text-align: left;
   }
   .container1,
   .container2 {
