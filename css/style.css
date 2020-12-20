@@ -222,10 +222,7 @@ body {
   font-size: 4rem;
   color: white;
 }
-.proj-p {
-  padding: 30px 120px;
-  box-sizing: border-box;
-}
+
 .snakegamedescribe {
   padding: 10%;
   font-size: 115%;
@@ -281,6 +278,10 @@ body .pic {
   .linkedin,
   .github {
     width: 7%;
+  }
+  .proj-p {
+    padding: 30px 120px;
+    box-sizing: border-box;
   }
 }
 
