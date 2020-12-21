@@ -105,3 +105,5 @@ document.querySelector('.navbar-nav').addEventListener('click', function (e) {
     });
   }
 });
+
+//reveal sections
