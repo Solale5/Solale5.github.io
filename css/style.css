@@ -176,9 +176,9 @@ body {
 }
 .super-container2 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('/images/globe.jpg');
+    url('/images/space.jpeg');
 
-  background-size: cover;
+  background-size: contain;
 }
 .super-container3 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -327,6 +327,10 @@ body .pic {
   .hero-image2,
   .hero-image3 {
     height: 75%;
+  }
+  .super-container2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url('/images/globe.jpg');
   }
 }
 
