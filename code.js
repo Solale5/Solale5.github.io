@@ -106,4 +106,34 @@ document.querySelector('.navbar-nav').addEventListener('click', function (e) {
   }
 });
 
-//reveal sections
+//reveal sections on scroll!!!!
+const sections = document.querySelectorAll('.section');
+console.log(sections);
+
+sections.forEach(function (section) {
+  section.classList.add('hidden');
+});
+
+const options = {
+  root: null,
+  threshold: 0.1,
+  rootMargin: '-150px',
+};
+
+const observer = new IntersectionObserver(function (entries, observer) {
+  entries.forEach(function (e) {
+    const element = e.target;
+    console.log(element);
+    if (e.isIntersecting) {
+      element.classList.remove('hidden');
+      observer.unobserve(element);
+    } else {
+      return;
+    }
+  });
+}, options);
+
+// observer.observe(section);
+sections.forEach(function (section) {
+  observer.observe(section);
+});
