@@ -107,6 +107,7 @@ document.querySelector('.navbar-nav').addEventListener('click', function (e) {
 });
 
 //reveal sections on scroll!!!!
+
 const sections = document.querySelectorAll('.section');
 console.log(sections);
 
@@ -116,8 +117,7 @@ sections.forEach(function (section) {
 
 const options = {
   root: null,
-  threshold: 0.1,
-  rootMargin: '-150px',
+  threshold: 0,
 };
 
 const observer = new IntersectionObserver(function (entries, observer) {
