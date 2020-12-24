@@ -109,7 +109,6 @@ document.querySelector('.navbar-nav').addEventListener('click', function (e) {
 //reveal sections on scroll!!!!
 
 const sections = document.querySelectorAll('.section');
-console.log(sections);
 
 sections.forEach(function (section) {
   section.classList.add('hidden');
@@ -123,7 +122,7 @@ const options = {
 const observer = new IntersectionObserver(function (entries, observer) {
   entries.forEach(function (e) {
     const element = e.target;
-    console.log(element);
+
     if (e.isIntersecting) {
       element.classList.remove('hidden');
       observer.unobserve(element);
