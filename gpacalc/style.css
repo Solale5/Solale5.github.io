@@ -1,0 +1,63 @@
+.container2 {
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-top: 50px;
+  box-sizing: border-box;
+}
+
+.message {
+  color: white;
+  font-size: 300%;
+}
+body {
+  background-image: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)),
+    url('/images/maxresdefault.jpg');
+  background-size: auto;
+}
+.container {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  padding-top: 100px;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: aqua;
+}
+
+.calculate {
+  background-color: blueviolet;
+  border: 3px solid aqua;
+  border-radius: 20px;
+}
+.add,
+.remove {
+  background-color: aqua;
+  border: 3px solid aqua;
+  border-radius: 9px;
+}
+
+select,
+input {
+  display: inline-block;
+}
+.custom-select {
+  height: 40%;
+  width: 20%;
+}
+
+@media screen and (min-width: 600px) {
+  .credits {
+    width: 20%;
+    height: 40px;
+  }
+  .custom-select {
+    height: 40px;
+    width: 20%;
+  }
+}
