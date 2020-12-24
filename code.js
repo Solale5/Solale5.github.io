@@ -7,7 +7,7 @@ const cursorSpan = document.querySelector('.cursor');
 const textArray = [
   'a CS student',
   'a basketball enthusiast',
-  'an aspiring developer;',
+  'an aspiring developer',
 ];
 const typingDelay = 100;
 const erasingDelay = 100;

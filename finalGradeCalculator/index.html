@@ -5,44 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
       crossorigin="anonymous"
     />
-    <link rel="icon" type="image/jpg" href="../images/cropped-s-favicon.ico" />
-  <link rel="shortcut icon" type="image/jpg" href="../images/cropped-s-favicon.ico" />
-    <title>Grade Calculator</title>
+    <link rel="icon" type="image/jpg" href="images/cropped-s-favicon.ico" />
+    <link
+      rel="shortcut icon"
+      type="image/jpg"
+      href="images/cropped-s-favicon.ico"
+    />
+    <title>Final Grade Calculator</title>
   </head>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color:rgb(0, 0, 0)!important">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">GPA Calculator</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="../finalGradeCalculator/index.html">Final Grade Calculator</a>
+            <a class="nav-link " aria-current="page" href="../index.html">back to SA portfolio</a>
+           
+            
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
   <body>
     <div class="top-bar">
       <div
-        class="py-5 text-light shadow"
-        style="background-color: rgb(35, 99, 142)"
+        class="py text-light shadow"
+        style="background-color: rgb(0, 0, 0)"
       >
         <div class="container">
-          <h1 class="display-6 text-light">Final Grade Calculator</h1>
-          <p class="lead">made with HTML, CSS, Bootstrap, and JavaScript by Solomon Alemu</p>
+          <h1 class="display-6 text-light">GPA Calculator</h1>
+          <p class="lead">made by Solomon Alemu</p>
         </div>
       </div>
     </div>
-    <div class="center">
-        
-      <h3>This web app will help you determine what you need to score on any given final exam to get your desired grade</h3>
-      <p class="lead"><strong> Example: 92 93 30</strong> In this example 92 is your current grade, 93 is what you want to get in the class, and your final is 30% of your grade. Each number should be entered seperately.</p>
+    <div class="container2">
+      <h1> College GPA Calculator</h1>
       
-        <input type="number" placeholder="current grade" class="myGrade" > </input>
-        <input type="number" placeholder="desired grade" class="desiredGrade" />
-        <input type="number" placeholder="weight" class="percentOfTotalGrade" />
-        <button class="btn check">Check!</button>
-      
-    </div>
-    <p class="lead message">you need a:</p>
-
-      <img class="books" src="/finalGradeCalculator/download.jpg" alt="">
-
-    <a href="../index.html" class="lead">go back home</a>
-
-    <script  src="script.js"></script>
+      <div class="rows">
+          
+        <div class="grade-rows">
+            
+          <select  class="custom-select">
+            <option value="4">A</option>
+            <option value="3.7">A-</option>
+            <option value="3.4">B+</option>
+            <option value="3">B</option>
+            <option value="2.7">B-</option>
+            <option value="2.3">C+</option>
+            <option value="2">C</option>
+            <option value="1.7">C-</option>
+            <option value="1.3">D+</option>
+            <option value="1.0">D</option>
+            <option value="0">F</option>
+          </select>
+          <input class="credits" placeholder="credits" type="number" />
+        </div>
+      </div>
+      <button class="add">Add class</button>
+      <button class="remove">remove class</button>
+      <button class="calculate">Calculate GPA</button>
+      <p class="message">your gpa is:</p>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
   </body>
 </html>
