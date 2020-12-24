@@ -1,63 +1,41 @@
-.container2 {
+h1,
+h3 {
+  text-align: center;
+}
+
+.center {
   display: block;
-  text-align: center;
   margin-left: auto;
   margin-right: auto;
+  padding: 20px 40px;
 
-  padding-top: 50px;
   box-sizing: border-box;
 }
 
-.message {
-  color: white;
-  font-size: 300%;
-}
-body {
-  background-image: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)),
-    url('/images/maxresdefault.jpg');
-  background-size: auto;
-}
-.container {
-  text-align: center;
+.btn,
+.check {
+  background-color: rgb(197, 215, 242) !important;
+  display: block !important;
   margin-left: auto;
   margin-right: auto;
-  color: white;
-  padding-top: 100px;
-  box-sizing: border-box;
 }
 
-h1 {
-  color: aqua;
+.lead {
+  display: block !important;
+  text-align: center !important;
+  margin-left: auto;
 }
 
-.calculate {
-  background-color: blueviolet;
-  border: 3px solid aqua;
-  border-radius: 20px;
-}
-.add,
-.remove {
-  background-color: aqua;
-  border: 3px solid aqua;
-  border-radius: 9px;
+.percentOfTotalGrade,
+.myGrade,
+.desiredGrade {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-select,
-input {
-  display: inline-block;
-}
-.custom-select {
-  height: 40%;
-  width: 20%;
-}
-
-@media screen and (min-width: 600px) {
-  .credits {
-    width: 20%;
-    height: 40px;
-  }
-  .custom-select {
-    height: 40px;
-    width: 20%;
-  }
+.books {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
