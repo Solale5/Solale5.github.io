@@ -52,7 +52,7 @@ body {
 
 .arrow {
   position: absolute;
-  top: 60%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -106,13 +106,14 @@ body {
 /*code for type effect END */
 
 .hero-image {
-  background-image: url('/images/IMG_2713.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+    url('/images/IMG_2713.jpg');
 
   /* Set a specific height */
   height: 100%;
 
   /* Position and center the image to scale nicely on all screens */
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
 
   background-size: cover;
@@ -127,7 +128,8 @@ body {
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
+  color: whitesmoke;
+
   white-space: nowrap;
 }
 
@@ -221,13 +223,13 @@ body {
 /* START OF PROJECT AREA*/
 .hero-image2 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05)),
-    url('/images/IMG_4002.jpg');
+    url('/images/IMG_4665.jpg');
 
   /* Set a specific height */
   height: 50%;
 
   /* Position and center the image to scale nicely on all screens */
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
 
   background-size: cover;
@@ -318,6 +320,11 @@ body .pic {
   .container2 {
     display: flex;
   }
+
+  .hero-image2 {
+    background-position: top;
+  }
+
   .skills,
   .education {
     flex: 1;
