@@ -113,7 +113,7 @@ body {
   height: 100%;
 
   /* Position and center the image to scale nicely on all screens */
-  background-position: top;
+  background-position: center;
   background-repeat: no-repeat;
 
   background-size: cover;
