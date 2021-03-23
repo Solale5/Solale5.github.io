@@ -136,3 +136,36 @@ const observer = new IntersectionObserver(function (entries, observer) {
 sections.forEach(function (section) {
   observer.observe(section);
 });
+
+const container = document.querySelector('.qoute');
+
+//adds quote to page
+let i = 1;
+const quoteAddToPage = function (string, author) {
+  let html = `<p class="thetext${i}">"${string}" - ${author}</p>`;
+  container.insertAdjacentHTML('beforeend', html);
+};
+
+//runs app
+const doIt = function () {
+  // get quote data using quote api
+  fetch(`https://api.quotable.io/random`)
+    .then(function (response) {
+      //   console.log(response);
+      return response.json(); //using the json method returns a new Promise so we call then method again
+    })
+    .then(function (data) {
+      //   const random = Math.floor(Math.random() * 10);
+
+      let quote = data.content;
+      let author = data.author;
+      quoteAddToPage(quote, author);
+    });
+};
+document.querySelector('.bt').addEventListener('click', function () {
+  doIt();
+  i++;
+  document.querySelector(`.thetext${i - 1}`).remove();
+  console.log(i);
+});
+doIt();
