@@ -106,8 +106,8 @@ body {
 /*code for type effect END */
 
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-    url('/images/IMG_2713.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.509), rgba(0, 0, 0, 0)),
+    url('/images/Screen\ Shot\ 2021-04-22\ at\ 12.39.07\ PM.png');
 
   /* Set a specific height */
   height: 100%;
