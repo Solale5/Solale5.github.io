@@ -106,8 +106,7 @@ body {
 /*code for type effect END */
 
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.509), rgba(0, 0, 0, 0)),
-    url('/images/sol2.png');
+  background-image: url('/images/IMG_2713.jpg');
 
   /* Set a specific height */
   height: 100%;
