@@ -310,6 +310,17 @@ body .pic {
   .super-container3 {
     background-attachment: fixed;
   }
+  body .pic {
+    width: 60%;
+  }
+
+  .snakegame {
+    height: auto;
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+  }
+
   .education .section-title,
   .work-exp .section-title,
   .work-exp2 .section-title {

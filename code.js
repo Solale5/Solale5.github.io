@@ -166,6 +166,5 @@ document.querySelector('.bt').addEventListener('click', function () {
   doIt();
   i++;
   document.querySelector(`.thetext${i - 1}`).remove();
-  console.log(i);
 });
 doIt();
