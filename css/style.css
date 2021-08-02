@@ -60,8 +60,8 @@ body {
   display: block;
   width: 30px;
   height: 30px;
-  border-bottom: 3px solid #ffffff;
-  border-right: 3px solid #ffffff;
+  border-bottom: 3px solid rgb(203, 183, 183);
+  border-right: 3px solid rgb(203, 183, 183);
   transform: rotate(45deg);
   margin: -10px;
   animation: animate 2s infinite;
@@ -107,7 +107,7 @@ body {
 
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.133) 9%, rgb(0, 0, 0, 0)),
-    url('/images/IMG_0399.JPG');
+    url('/images/IMG_0399.jpeg');
 
   /* Set a specific height */
   height: 100%;
