@@ -32,12 +32,12 @@ body {
   overflow: hidden;
 }
 .container p span.typed-text {
-  font-weight: 100;
-  color: #fff;
+  font-weight: 105;
+  color: rgb(203, 183, 183);
 }
 .container .first {
   font-weight: 100;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 .container p span.cursor {
   display: inline-block;
@@ -106,13 +106,14 @@ body {
 /*code for type effect END */
 
 .hero-image {
-  background-image: url('/images/IMG_2713.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.133) 9%, rgb(0, 0, 0, 0)),
+    url('/images/IMG_0399.JPG');
 
   /* Set a specific height */
   height: 100%;
 
   /* Position and center the image to scale nicely on all screens */
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
 
   background-size: cover;
@@ -124,10 +125,10 @@ body {
   text-align: center;
   font-size: 5rem;
   position: absolute;
-  top: 30%;
+  top: 28%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: whitesmoke;
+  color: rgb(0, 0, 0);
 
   white-space: nowrap;
 }
