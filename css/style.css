@@ -23,6 +23,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .container p {
   font-size: 2rem;
   padding: 0.5rem;
@@ -37,7 +38,7 @@ body {
 }
 .container .first {
   font-weight: 100;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 .container p span.cursor {
   display: inline-block;
