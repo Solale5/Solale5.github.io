@@ -2,17 +2,14 @@
 
 html {
   height: 100%;
-
-  background-color: black;
-
-  background-image: linear-gradient(3deg, #0d3961 0%, #28313b 74%);
-  background-repeat: no-repeat;
+  background-color: #05070a;
 }
 body {
-  font-family: sans-serif;
-  background-color: black;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  background-color: #05070a;
 
-  color: white;
+  color: #e9edf2;
   height: 100%;
 }
 
@@ -106,17 +103,20 @@ body {
 /*code for type effect END */
 
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.133) 9%, rgb(0, 0, 0, 0)),
-    url('/images/640px-A_black_image.jpeg');
+  background: radial-gradient(
+      ellipse at 25% 20%,
+      rgba(79, 139, 223, 0.22),
+      transparent 55%
+    ),
+    linear-gradient(rgba(5, 7, 10, 0.72), rgba(5, 7, 10, 0.85)),
+    url('/images/dots2.jpg');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   /* Set a specific height */
   height: 100%;
 
-  /* Position and center the image to scale nicely on all screens */
-  background-position: top;
-  background-repeat: no-repeat;
-
-  background-size: cover;
   position: relative;
 }
 
@@ -128,9 +128,15 @@ body {
   top: 28%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: rgb(255, 255, 255);
 
   white-space: nowrap;
+}
+.hero-text p {
+  background: linear-gradient(90deg, #ffffff 0%, #a9c9f5 50%, #4f8bdf 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #4f8bdf;
 }
 
 @media screen and (max-width: 767px) {
@@ -167,26 +173,29 @@ body {
 .super-container3 {
   display: block;
 
-  color: white;
+  color: #e9edf2;
   margin-left: auto;
   margin-right: auto;
   max-width: 100%;
   box-sizing: border-box;
 }
 .super-container {
-  background-color: black;
-
-  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)),
+  background: linear-gradient(rgba(5, 7, 10, 0.88), rgba(5, 7, 10, 0.82)),
     url('/images/dots2.jpg');
   background-size: cover;
 }
-.super-container2,
+.super-container2 {
+  background: linear-gradient(rgba(5, 7, 10, 0.75), rgba(5, 7, 10, 0.75)),
+    url('/images/mobilespace.jpg');
+  background-size: cover;
+}
 .super-container3 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background: linear-gradient(rgba(5, 7, 10, 0.75), rgba(5, 7, 10, 0.75)),
     url('/images/mobilespace.jpg');
   background-size: cover;
 }
 
+/* shared card look, used across resume/skills/education/work-exp/projects */
 .work-exp,
 .work-exp2,
 .skills,
@@ -195,11 +204,14 @@ body {
 .container3 {
   padding: 30px 40px;
   box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  margin-bottom: 20px;
 }
 .container3 {
   text-align: center;
-  padding-top: 65px;
-  box-sizing: border-box;
+  padding-top: 40px;
 }
 .container4 {
   padding: 30px 40px;
@@ -211,6 +223,22 @@ body {
   font-weight: 220;
   color: #4f8bdf;
 }
+
+.skills ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.skills ul li {
+  background: rgba(79, 139, 223, 0.14);
+  border: 1px solid rgba(79, 139, 223, 0.35);
+  color: #a9c9f5;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+}
 .ig,
 .linkedin,
 .github {
@@ -220,21 +248,23 @@ body {
   height: auto;
 }
 
-/* START OF PROJECT AREA*/
-.hero-image2 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05)),
-    url('/images/IMG_4665.jpg');
-
-  /* Set a specific height */
-  height: 50%;
-
-  /* Position and center the image to scale nicely on all screens */
-  background-position: top;
-  background-repeat: no-repeat;
-
-  background-size: cover;
-  position: relative;
+/* Small persistent social icons in the navbar */
+.nav-socials {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-left: 8px;
 }
+.nav-socials img {
+  width: 20px;
+  height: 20px;
+  opacity: 0.85;
+}
+.nav-socials img:hover {
+  opacity: 1;
+}
+
+/* START OF PROJECT AREA*/
 .proj-header h1 {
   font-size: 4rem;
   color: white;
@@ -253,6 +283,7 @@ body {
   display: block;
   width: 77%;
   margin: 0 auto;
+  border-radius: 8px;
 }
 body .pic {
   width: 80%;
@@ -265,6 +296,7 @@ body .pic {
 
   object-fit: cover;
   object-position: 20% 10%;
+  border-radius: 8px;
 }
 .link {
   font-size: 1.5rem;
@@ -272,17 +304,15 @@ body .pic {
 }
 /* START OF ABOUT ME*/
 .hero-image3 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
+  background: linear-gradient(rgba(5, 7, 10, 0.55), rgba(5, 7, 10, 0.75)),
     url('/images/IMG_2852.jpg');
+  background-position: 25% 25%;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   /* Set a specific height */
   height: 50%;
 
-  /* Position and center the image to scale nicely on all screens */
-  background-position: 25% 25%;
-  background-repeat: no-repeat;
-
-  background-size: cover;
   position: relative;
 }
 
@@ -303,14 +333,6 @@ body .pic {
 }
 
 @media screen and (min-width: 1025px) {
-  .hero-image,
-  .hero-image2,
-  .hero-image3,
-  .super-container,
-  .super-container2,
-  .super-container3 {
-    background-attachment: fixed;
-  }
   body .pic {
     width: 60%;
   }
@@ -328,39 +350,36 @@ body .pic {
   .skills .section-title {
     text-align: left;
   }
-  .container1,
-  .container2 {
+  .container1 {
     display: flex;
-  }
-
-  .hero-image2 {
-    background-position: top;
+    gap: 20px;
   }
 
   .skills,
   .education {
     flex: 1;
   }
-  .hero-image2,
   .hero-image3 {
     height: 75%;
+    background-attachment: fixed;
+  }
+  .hero-image,
+  .super-container,
+  .super-container2,
+  .super-container3 {
+    background-attachment: fixed;
   }
   .super-container {
-    background-color: black;
-
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    background-image: linear-gradient(rgba(5, 7, 10, 0.72), rgba(5, 7, 10, 0.6)),
       url('/images/maxresdefault.jpg');
-    background-size: cover;
   }
   .super-container2 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    background-image: linear-gradient(rgba(5, 7, 10, 0.55), rgba(5, 7, 10, 0.55)),
       url('/images/globe.jpg');
-    background-size: cover;
   }
   .super-container3 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    background-image: linear-gradient(rgba(5, 7, 10, 0.6), rgba(5, 7, 10, 0.6)),
       url('/images/space.jpeg');
-    background-size: cover;
   }
 }
 
