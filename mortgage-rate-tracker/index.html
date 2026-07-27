@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/jpg" href="../images/cropped-s-favicon.ico" />
+    <title>US 30-Year Mortgage Rate Tracker</title>
+  </head>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(0, 0, 0) !important">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Mortgage Rate Tracker</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="https://github.com/Solale5/Solale5.github.io/blob/main/mortgage-rate-tracker/fetch_and_build.py" target="_blank" rel="noopener">View pipeline source</a>
+            <a class="nav-link" href="../index.html">back to SA portfolio</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <body>
+    <div class="top-bar">
+      <div class="py text-light shadow" style="background-color: rgb(0, 0, 0)">
+        <div class="container">
+          <h1 class="display-6 text-light">US 30-Year Fixed Mortgage Rate</h1>
+          <p class="lead">A small data pipeline: public FRED data, cleaned with pandas, rendered as a static page.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container content">
+      <div class="row stat-row" id="stat-cards">
+        <div class="col-6 col-md-3 stat-card">
+          <div class="stat-label">Current Rate</div>
+          <div class="stat-value" id="stat-current">&mdash;</div>
+          <div class="stat-sub" id="stat-current-date"></div>
+        </div>
+        <div class="col-6 col-md-3 stat-card">
+          <div class="stat-label">1 Year Ago</div>
+          <div class="stat-value" id="stat-yearago">&mdash;</div>
+          <div class="stat-sub" id="stat-yearago-change"></div>
+        </div>
+        <div class="col-6 col-md-3 stat-card">
+          <div class="stat-label">All-Time Low</div>
+          <div class="stat-value" id="stat-low">&mdash;</div>
+          <div class="stat-sub" id="stat-low-date"></div>
+        </div>
+        <div class="col-6 col-md-3 stat-card">
+          <div class="stat-label">All-Time High</div>
+          <div class="stat-value" id="stat-high">&mdash;</div>
+          <div class="stat-sub" id="stat-high-date"></div>
+        </div>
+      </div>
+
+      <div class="chart-wrap">
+        <canvas id="rate-chart" height="90"></canvas>
+      </div>
+
+      <p class="pipeline-note">
+        <strong>How this works:</strong> <code>fetch_and_build.py</code> pulls the public
+        <a href="https://fred.stlouisfed.org/series/MORTGAGE30US" target="_blank" rel="noopener">MORTGAGE30US</a>
+        series from FRED (no API key required), cleans it with pandas, computes the stats above, and writes a
+        static <code>data.json</code> that this page reads &mdash; no backend, no live API calls at page load.
+        <span id="generated-at"></span>
+      </p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>

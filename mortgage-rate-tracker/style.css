@@ -1,0 +1,71 @@
+html,
+body {
+  height: 100%;
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+}
+
+.top-bar .py {
+  padding: 50px 0 40px 0;
+}
+
+.content {
+  padding: 40px 15px 60px 15px;
+}
+
+.stat-row {
+  margin: 0 0 30px 0;
+  row-gap: 20px;
+}
+
+.stat-card {
+  text-align: center;
+  padding: 20px 10px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  color: #9aa5b1;
+}
+
+.stat-value {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #4f8bdf;
+}
+
+.stat-sub {
+  font-size: 0.8rem;
+  color: #9aa5b1;
+}
+
+.chart-wrap {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.pipeline-note {
+  color: #9aa5b1;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.pipeline-note a {
+  color: #4f8bdf;
+}
+
+.pipeline-note code {
+  color: #e0e0e0;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 1px 5px;
+  border-radius: 4px;
+}
