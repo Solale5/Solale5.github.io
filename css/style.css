@@ -10,7 +10,6 @@ html {
 }
 body {
   font-family: sans-serif;
-  background-image: #06a8ff;
   background-color: black;
 
   color: white;
@@ -325,7 +324,8 @@ body .pic {
 
   .education .section-title,
   .work-exp .section-title,
-  .work-exp2 .section-title {
+  .work-exp2 .section-title,
+  .skills .section-title {
     text-align: left;
   }
   .container1,
@@ -362,6 +362,12 @@ body .pic {
       url('/images/space.jpeg');
     background-size: cover;
   }
+}
+
+.role-divider {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  margin: 20px 0;
 }
 
 .Activities-Honors {
