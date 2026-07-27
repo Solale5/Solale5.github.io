@@ -13,9 +13,10 @@
   font-size: 300%;
 }
 body {
-  background-image: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)),
+  background: linear-gradient(rgba(5, 7, 10, 0.72), rgba(5, 7, 10, 0.6)),
     url('/images/maxresdefault.jpg');
-  background-size: auto;
+  background-size: cover;
+  background-attachment: fixed;
 }
 .container {
   text-align: center;
