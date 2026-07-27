@@ -36,14 +36,17 @@
             <div class="nav-socials">
               <a href="https://www.linkedin.com/in/solomon-a-00b67a1a3/" target="_blank" rel="noopener"><img src="images/Linkedin.png" alt="LinkedIn"></a>
               <a href="https://github.com/Solale5" target="_blank" rel="noopener"><img src="images/github.png" alt="GitHub"></a>
+              <button id="cmdk-trigger" class="cmdk-trigger" type="button" title="Quick nav (Ctrl/Cmd+K)">⌘K</button>
             </div>
           </div>
         </div>
       </nav>
   </header>
-  
+
   <body>
-  
+
+    <div class="scroll-progress" id="scrollProgress"></div>
+
     <div class="hero-image" id="Home">
         <div class="hero-text section"> <p>Solomon Alemu</p></div>
         <div class="container">
@@ -251,6 +254,7 @@
     </div>
     <div class="hero-image3" >
         <div class="hero-text section"> <p>About Me</p></div>
+        <button id="bball-trigger" class="bball-trigger" type="button" title="Psst... take a shot" aria-label="Play a basketball mini-game">🏀</button>
         <div class="arrow ">
           <span></span>
           <span></span>
@@ -317,7 +321,30 @@
     
 
 
+    <!-- Command palette -->
+    <div id="cmdk-overlay" class="cmdk-overlay" hidden>
+      <div class="cmdk-modal">
+        <input type="text" id="cmdk-input" class="cmdk-input" placeholder="Type a command... (Esc to close)" autocomplete="off" />
+        <ul id="cmdk-list" class="cmdk-list"></ul>
+      </div>
+    </div>
+
+    <!-- Basketball mini-game -->
+    <div id="bball-overlay" class="bball-overlay" hidden>
+      <div class="bball-modal">
+        <button id="bball-close" class="bball-close" type="button" aria-label="Close">&times;</button>
+        <h3 class="section-title">Quick shootaround</h3>
+        <p class="bball-score">Score: <span id="bball-score">0</span></p>
+        <canvas id="bball-canvas" width="340" height="420"></canvas>
+        <p class="bball-hint">Click anywhere in the court to shoot toward that spot.</p>
+      </div>
+    </div>
+
+    <!-- Konami code toast -->
+    <div id="konami-toast" class="konami-toast" hidden></div>
+
     <script src="code.js"></script>
+    <script src="interactive.js"></script>
     <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>

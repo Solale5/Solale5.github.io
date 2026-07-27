@@ -399,3 +399,240 @@ body .socials {
   padding-bottom: 20px;
   box-sizing: border-box;
 }
+
+/* START OF INTERACTIVE EXTRAS */
+
+/* scroll progress bar */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background: linear-gradient(90deg, #4f8bdf, #a9c9f5);
+  z-index: 2000;
+  transition: width 0.1s ease-out;
+}
+
+/* cmd+k trigger badge in navbar */
+.cmdk-trigger {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #9aa5b1;
+  font-size: 0.75rem;
+  padding: 3px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.cmdk-trigger:hover {
+  color: white;
+  border-color: rgba(255, 255, 255, 0.35);
+}
+
+/* command palette */
+.cmdk-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(5, 7, 10, 0.7);
+  z-index: 3000;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 12vh;
+}
+.cmdk-modal {
+  width: 90%;
+  max-width: 480px;
+  background: #0c1017;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+}
+.cmdk-input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 16px 18px;
+  font-size: 1.05rem;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: #e9edf2;
+  outline: none;
+}
+.cmdk-list {
+  list-style: none;
+  margin: 0;
+  padding: 8px;
+  max-height: 320px;
+  overflow-y: auto;
+}
+.cmdk-list li {
+  padding: 10px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #c7cdd6;
+  display: flex;
+  justify-content: space-between;
+}
+.cmdk-list li.active,
+.cmdk-list li:hover {
+  background: rgba(79, 139, 223, 0.18);
+  color: white;
+}
+.cmdk-list li span.cmdk-hint {
+  color: #6f7a88;
+  font-size: 0.8rem;
+}
+
+/* basketball trigger + mini-game */
+.bball-trigger {
+  position: absolute;
+  bottom: 14px;
+  right: 18px;
+  background: rgba(5, 7, 10, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  line-height: 1;
+}
+.bball-trigger:hover {
+  border-color: #4f8bdf;
+  transform: scale(1.08);
+}
+.bball-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(5, 7, 10, 0.8);
+  z-index: 3000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.bball-modal {
+  position: relative;
+  background: #0c1017;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+}
+.bball-close {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  background: none;
+  border: none;
+  color: #9aa5b1;
+  font-size: 1.6rem;
+  cursor: pointer;
+  line-height: 1;
+}
+.bball-close:hover {
+  color: white;
+}
+.bball-score {
+  color: #4f8bdf;
+  font-weight: bold;
+}
+#bball-canvas {
+  background: #0a0e14;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  cursor: crosshair;
+  touch-action: none;
+}
+.bball-hint {
+  color: #6f7a88;
+  font-size: 0.85rem;
+  margin-top: 8px;
+}
+
+/* konami easter egg toast */
+.konami-toast {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #0c1017;
+  border: 1px solid #4f8bdf;
+  color: white;
+  padding: 14px 22px;
+  border-radius: 999px;
+  z-index: 4000;
+  box-shadow: 0 10px 40px rgba(79, 139, 223, 0.4);
+}
+
+.confetti-piece {
+  position: fixed;
+  top: -10px;
+  width: 8px;
+  height: 14px;
+  z-index: 3999;
+  pointer-events: none;
+}
+
+/* END OF INTERACTIVE EXTRAS */
+
+/* print-friendly resume */
+@media print {
+  header,
+  .scroll-progress,
+  .hero-image,
+  .super-container2,
+  .hero-image3,
+  .super-container3,
+  .cmdk-overlay,
+  .bball-overlay,
+  .konami-toast,
+  .nav-socials,
+  body .socials,
+  .arrow {
+    display: none !important;
+  }
+  html,
+  body {
+    background: white !important;
+    color: #111 !important;
+    height: auto !important;
+  }
+  .hidden {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  .super-container {
+    background: white !important;
+    padding: 0 !important;
+  }
+  .work-exp,
+  .work-exp2,
+  .skills,
+  .education,
+  .resume,
+  .container3 {
+    background: white !important;
+    border: 1px solid #ccc !important;
+    page-break-inside: avoid;
+  }
+  .section-title {
+    color: #14314f !important;
+  }
+  .skills ul li {
+    background: #eef3fb !important;
+    border-color: #14314f !important;
+    color: #14314f !important;
+  }
+  a {
+    color: #14314f !important;
+  }
+  .container1 {
+    display: flex !important;
+    gap: 20px;
+  }
+}
