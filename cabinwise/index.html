@@ -9,13 +9,14 @@
     />
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'"
+      content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' blob: data:; connect-src 'self' blob:; object-src 'none'; base-uri 'none'; form-action 'none'"
     />
     <title>CabinWise — Solomon Alemu</title>
     <link rel="canonical" href="https://solomonalemu.com/cabinwise/" />
     <link rel="icon" href="../images/cropped-s-favicon.ico" />
     <link rel="stylesheet" href="../css/cabinwise.css" />
     <script src="demo.js" defer></script>
+    <script type="module" src="vehicle-preview.js"></script>
   </head>
   <body class="cw cw-page">
     <a class="cw-skip" href="#main">Skip to content</a>
@@ -45,23 +46,51 @@
           <div class="cw-visual">
             <div class="cw-visual-head">
               <span>CabinWise / Model 3</span
-              ><span>ILLUSTRATION · SAMPLE DATA</span>
+              ><span>3D PREVIEW · SAMPLE DATA</span>
             </div>
-            <img
-              src="vehicle-illustration.svg"
-              width="800"
-              height="350"
-              alt="Stylized side profile of an electric sedan; an illustration, not a live vehicle view."
-            />
+            <div
+              class="cw-model-stage"
+              data-model-src="models/model-3-highland.glb"
+            >
+              <p class="cw-model-status" role="status">
+                Enable JavaScript to explore the Model 3 in 3D.
+              </p>
+            </div>
+            <div class="cw-model-toolbar">
+              <span>Drag or use arrow keys to rotate</span
+              ><button class="cw-model-reset" type="button" disabled>
+                Reset view
+              </button>
+            </div>
             <div class="cw-mini-stats">
               <div><span>Battery</span><strong>72%</strong></div>
               <div><span>Cabin</span><strong>76°F</strong></div>
               <div><span>Charge limit</span><strong>80%</strong></div>
             </div>
           </div>
+          <details class="cw-model-credit">
+            <summary>About this 3D view</summary>
+            <p>
+              Same Model 3 asset and camera setup as CabinWise. Glass and wheel
+              overlays cleaned up; paint materials adjusted. Appearance is
+              illustrative, not live vehicle state. Model by
+              <a
+                href="https://sketchfab.com/3d-models/2024-tesla-model-3-interior-61ddcbdbd3854c239e0c95bf60b00022"
+                target="_blank"
+                rel="noopener noreferrer"
+                >tonielpro520</a
+              >, licensed
+              <a
+                href="https://creativecommons.org/licenses/by/4.0/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >CC BY 4.0</a
+              >.
+            </p>
+          </details>
           <p class="cw-caption">
-            Illustrative portfolio visual with fictional readings. The private
-            app includes a native interactive 3D preview.
+            The app’s actual 3D model, with fictional portfolio readings. No
+            vehicle connection.
           </p>
         </div>
       </section>
