@@ -1,0 +1,54 @@
+name: Tab Shelf release
+on:
+  push:
+    branches: [gh-pages]
+    paths: ['tab-shelf/extension/**', 'scripts/tab_shelf*', '.github/workflows/tab-shelf.yml']
+    tags: ['tab-shelf-v*']
+  pull_request:
+    paths: ['tab-shelf/extension/**', 'scripts/tab_shelf*', '.github/workflows/tab-shelf.yml']
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: Build only, upload a draft, or submit for review
+        type: choice
+        default: build
+        options: [build, upload, submit]
+permissions:
+  contents: read
+concurrency:
+  group: tab-shelf-${{ github.event_name == 'pull_request' && github.ref || 'release' }}
+  cancel-in-progress: false
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: '22'
+      - name: Test extension
+        working-directory: tab-shelf/extension
+        run: npm test
+      - name: Test release tooling
+        run: python3 -m unittest discover -s scripts -p 'tab_shelf_test.py'
+      - name: Build store package
+        env:
+          RELEASE_TAG: ${{ github.ref_type == 'tag' && github.ref_name || '' }}
+        run: python3 scripts/tab_shelf_release.py --tag "$RELEASE_TAG"
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: tab-shelf-webstore
+          path: dist/tab-shelf-webstore.zip
+          if-no-files-found: error
+      - name: Upload or submit to Chrome Web Store
+        if: startsWith(github.ref, 'refs/tags/tab-shelf-v') || (github.event_name == 'workflow_dispatch' && inputs.mode != 'build')
+        env:
+          CWS_CLIENT_ID: ${{ secrets.CWS_CLIENT_ID }}
+          CWS_CLIENT_SECRET: ${{ secrets.CWS_CLIENT_SECRET }}
+          CWS_REFRESH_TOKEN: ${{ secrets.CWS_REFRESH_TOKEN }}
+          CWS_PUBLISHER_ID: ${{ vars.CWS_PUBLISHER_ID }}
+          CWS_EXTENSION_ID: ${{ vars.CWS_EXTENSION_ID }}
+          RELEASE_MODE: ${{ github.ref_type == 'tag' && 'submit' || inputs.mode }}
+          RELEASE_TAG: ${{ github.ref_type == 'tag' && github.ref_name || '' }}
+        run: python3 scripts/tab_shelf_release.py --tag "$RELEASE_TAG" --mode "$RELEASE_MODE"
