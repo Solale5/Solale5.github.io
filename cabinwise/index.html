@@ -1,37 +1,38 @@
 <!doctype html>
+
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <meta
-      name="description"
       content="CabinWise: Solomon Alemu’s personal Tesla companion. A case study in physical-device integration, command verification, and permission-scoped AI tools."
+      name="description"
     />
     <meta
-      http-equiv="Content-Security-Policy"
       content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' blob: data:; connect-src 'self' blob:; object-src 'none'; base-uri 'none'; form-action 'none'"
+      http-equiv="Content-Security-Policy"
     />
     <title>CabinWise — Solomon Alemu</title>
-    <link rel="canonical" href="https://solomonalemu.com/cabinwise/" />
-    <link rel="icon" href="../images/cropped-s-favicon.ico" />
-    <link rel="stylesheet" href="../css/cabinwise.css" />
-    <script src="demo.js" defer></script>
-    <script type="module" src="vehicle-preview.js"></script>
+    <link href="https://solomonalemu.com/cabinwise/" rel="canonical" />
+    <link href="../images/cropped-s-favicon.ico" rel="icon" />
+    <link href="../css/cabinwise.css" rel="stylesheet" />
+    <script defer="" src="demo.js"></script>
+    <script src="vehicle-preview.js" type="module"></script>
   </head>
   <body class="cw cw-page">
     <a class="cw-skip" href="#main">Skip to content</a>
     <header>
-      <nav class="cw-nav" aria-label="Portfolio">
+      <nav aria-label="Portfolio" class="cw-nav">
         <a class="cw-brand" href="../index.html">Solomon Alemu</a
         ><a href="../index.html#projects">← All projects</a>
       </nav>
     </header>
-    <main id="main" class="cw-wrap">
-      <section class="cw-hero" aria-labelledby="title">
+    <main class="cw-wrap" id="main">
+      <section aria-labelledby="title" class="cw-hero">
         <div>
           <p class="cw-eyebrow">Selected work / Personal project / 2026</p>
           <h1 id="title">CabinWise</h1>
-          <p class="cw-lead">Software that reaches<br />beyond the screen.</p>
+          <p class="cw-lead">A personal companion for my Tesla</p>
           <p class="cw-intro">
             A personal companion for my 2025 Model 3. I built a vehicle
             dashboard, daily controls, and a private ChatGPT connection—with
@@ -58,7 +59,7 @@
             </div>
             <div class="cw-model-toolbar">
               <span>Drag or use arrow keys to rotate</span
-              ><button class="cw-model-reset" type="button" disabled>
+              ><button class="cw-model-reset" disabled="" type="button">
                 Reset view
               </button>
             </div>
@@ -76,14 +77,14 @@
               illustrative, not live vehicle state. Model by
               <a
                 href="https://sketchfab.com/3d-models/2024-tesla-model-3-interior-61ddcbdbd3854c239e0c95bf60b00022"
-                target="_blank"
                 rel="noopener noreferrer"
+                target="_blank"
                 >tonielpro520</a
               >, licensed
               <a
                 href="https://creativecommons.org/licenses/by/4.0/"
-                target="_blank"
                 rel="noopener noreferrer"
+                target="_blank"
                 >CC BY 4.0</a
               >.
             </p>
@@ -108,13 +109,11 @@
           <dd>Personal, single-owner vehicle access</dd>
         </div>
       </dl>
-      <section class="cw-section" aria-labelledby="challenge">
+      <section aria-labelledby="challenge" class="cw-section">
         <div class="cw-section-header">
           <div>
-            <p class="cw-eyebrow">01 / The problem</p>
-            <h2 id="challenge">
-              A car doesn’t behave<br />like a web service.
-            </h2>
+            <p class="cw-eyebrow">The problem</p>
+            <h2 id="challenge">Building for a real vehicle</h2>
           </div>
           <p>
             A vehicle sleeps, readings grow old, and a successful API response
@@ -153,11 +152,11 @@
           </article>
         </div>
       </section>
-      <section class="cw-section" aria-labelledby="demo-title">
+      <section aria-labelledby="demo-title" class="cw-section">
         <div class="cw-section-header">
           <div>
-            <p class="cw-eyebrow">02 / Explore the interaction</p>
-            <h2 id="demo-title">Unknown is a state.<br />Never a zero.</h2>
+            <p class="cw-eyebrow">Explore the interaction</p>
+            <h2 id="demo-title">Making data freshness clear</h2>
           </div>
           <p>
             Try three fictional reading states. The illustration below explains
@@ -180,7 +179,7 @@
               </select>
             </div>
           </div>
-          <div id="sample-output" aria-live="polite" aria-atomic="true">
+          <div aria-atomic="true" aria-live="polite" id="sample-output">
             <div class="cw-mini-stats">
               <div>
                 <span>Battery</span><strong id="sample-battery">72%</strong>
@@ -192,7 +191,7 @@
                 <span>Charging</span><strong id="sample-charging">7 kW</strong>
               </div>
             </div>
-            <p id="sample-message" class="cw-state">
+            <p class="cw-state" id="sample-message">
               Fresh sample · just now. A measured cabin temperature is separate
               from the requested target.
             </p>
@@ -207,12 +206,12 @@
         >
       </section>
       <section
-        id="engineering"
-        class="cw-section"
         aria-labelledby="engineering-title"
+        class="cw-section"
+        id="engineering"
       >
-        <p class="cw-eyebrow">03 / Engineering decisions</p>
-        <h2 id="engineering-title">Make every boundary explicit.</h2>
+        <p class="cw-eyebrow">Engineering decisions</p>
+        <h2 id="engineering-title">Handling commands with care</h2>
         <div class="cw-split">
           <article>
             <h3>Accepted ≠ observed</h3>
@@ -230,7 +229,7 @@
             </p>
           </article>
           <article>
-            <h3>Wake with intent. Wait with a limit.</h3>
+            <h3>Waking a sleeping vehicle</h3>
             <p class="cw-muted">
               Status reads stay passive. A requested command can wake the
               vehicle once, then check readiness within a bounded wait. The web
@@ -245,7 +244,7 @@
             </p>
           </article>
         </div>
-        <ol class="cw-flow" aria-label="Web command lifecycle">
+        <ol aria-label="Web command lifecycle" class="cw-flow">
           <li>
             <strong>Review the action</strong
             ><span>Validate the requested change and confirm intent.</span>
@@ -267,13 +266,11 @@
           </li>
         </ol>
       </section>
-      <section class="cw-section" aria-labelledby="architecture-title">
+      <section aria-labelledby="architecture-title" class="cw-section">
         <div class="cw-section-header">
           <div>
-            <p class="cw-eyebrow">04 / Architecture</p>
-            <h2 id="architecture-title">
-              Keep credentials<br />behind the controls.
-            </h2>
+            <p class="cw-eyebrow">Architecture</p>
+            <h2 id="architecture-title">How it fits together</h2>
           </div>
           <p>
             The browser never receives a raw signing key. Owner checks and
@@ -283,19 +280,19 @@
           </p>
         </div>
         <div
-          class="cw-architecture"
           aria-label="Private app and MCP tools connect through a protected gateway and signer to Tesla Fleet API"
+          class="cw-architecture"
         >
           <div class="cw-node">
             <strong>Private app + MCP</strong
             ><span>Owner identity · scoped tools</span>
           </div>
-          <span class="cw-arrow" aria-hidden="true">→</span>
+          <span aria-hidden="true" class="cw-arrow">→</span>
           <div class="cw-node">
             <strong>Gateway + signer</strong
             ><span>Validated, signed requests</span>
           </div>
-          <span class="cw-arrow" aria-hidden="true">→</span>
+          <span aria-hidden="true" class="cw-arrow">→</span>
           <div class="cw-node">
             <strong>Tesla Fleet API</strong
             ><span>Readings · vehicle commands</span>
@@ -321,7 +318,7 @@
             </p>
           </article>
         </div>
-        <ul class="cw-tags" aria-label="Technology stack">
+        <ul aria-label="Technology stack" class="cw-tags">
           <li>React</li>
           <li>TypeScript</li>
           <li>Vinext</li>
@@ -334,13 +331,11 @@
           <li>MCP</li>
         </ul>
       </section>
-      <section class="cw-section" aria-labelledby="scope-title">
+      <section aria-labelledby="scope-title" class="cw-section">
         <div class="cw-split">
           <div>
-            <p class="cw-eyebrow">05 / Deliberate scope</p>
-            <h2 id="scope-title">
-              Useful today.<br />Honest about its limits.
-            </h2>
+            <p class="cw-eyebrow">Deliberate scope</p>
+            <h2 id="scope-title">What it does today</h2>
             <p class="cw-muted">
               The result is a personal tool for a real vehicle, spanning an
               interactive frontend, a protected command service, and
