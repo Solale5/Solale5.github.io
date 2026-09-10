@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="CabinWise: Solomon Alemu’s personal Tesla companion. A case study in physical-device integration, command verification, and permission-scoped AI tools."
+    />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'"
+    />
+    <title>CabinWise — Solomon Alemu</title>
+    <link rel="canonical" href="https://solomonalemu.com/cabinwise/" />
+    <link rel="icon" href="../images/cropped-s-favicon.ico" />
+    <link rel="stylesheet" href="../css/cabinwise.css" />
+    <script src="demo.js" defer></script>
+  </head>
+  <body class="cw cw-page">
+    <a class="cw-skip" href="#main">Skip to content</a>
+    <header>
+      <nav class="cw-nav" aria-label="Portfolio">
+        <a class="cw-brand" href="../index.html">Solomon Alemu</a
+        ><a href="../index.html#projects">← All projects</a>
+      </nav>
+    </header>
+    <main id="main" class="cw-wrap">
+      <section class="cw-hero" aria-labelledby="title">
+        <div>
+          <p class="cw-eyebrow">Selected work / Personal project / 2026</p>
+          <h1 id="title">CabinWise</h1>
+          <p class="cw-lead">Software that reaches<br />beyond the screen.</p>
+          <p class="cw-intro">
+            A personal companion for my 2025 Model 3. I built a vehicle
+            dashboard, daily controls, and a private ChatGPT connection—with
+            explicit boundaries between a request, an accepted command, and a
+            measured result.
+          </p>
+          <a class="cw-button" href="#engineering"
+            >Inside the engineering <span aria-hidden="true">↓</span></a
+          >
+        </div>
+        <div>
+          <div class="cw-visual">
+            <div class="cw-visual-head">
+              <span>CabinWise / Model 3</span
+              ><span>ILLUSTRATION · SAMPLE DATA</span>
+            </div>
+            <img
+              src="vehicle-illustration.svg"
+              width="800"
+              height="350"
+              alt="Stylized side profile of an electric sedan; an illustration, not a live vehicle view."
+            />
+            <div class="cw-mini-stats">
+              <div><span>Battery</span><strong>72%</strong></div>
+              <div><span>Cabin</span><strong>76°F</strong></div>
+              <div><span>Charge limit</span><strong>80%</strong></div>
+            </div>
+          </div>
+          <p class="cw-caption">
+            Illustrative portfolio visual with fictional readings. The private
+            app includes a native interactive 3D preview.
+          </p>
+        </div>
+      </section>
+      <dl class="cw-meta">
+        <div>
+          <dt>My role</dt>
+          <dd>Design &amp; full-stack engineering</dd>
+        </div>
+        <div>
+          <dt>System</dt>
+          <dd>Web app · Command gateway · AI tools</dd>
+        </div>
+        <div>
+          <dt>Scope</dt>
+          <dd>Personal, single-owner vehicle access</dd>
+        </div>
+      </dl>
+      <section class="cw-section" aria-labelledby="challenge">
+        <div class="cw-section-header">
+          <div>
+            <p class="cw-eyebrow">01 / The problem</p>
+            <h2 id="challenge">
+              A car doesn’t behave<br />like a web service.
+            </h2>
+          </div>
+          <p>
+            A vehicle sleeps, readings grow old, and a successful API response
+            does not prove the cabin has cooled. CabinWise brings useful daily
+            actions together while making those limits visible to both a person
+            and an AI assistant.
+          </p>
+        </div>
+        <div class="cw-grid">
+          <article class="cw-panel">
+            <span class="cw-number">SEE</span>
+            <h3>A clear vehicle view</h3>
+            <p>
+              A native, interactive 3D preview alongside battery, cabin
+              temperature, and charging readings. Stale and unavailable values
+              have explicit states.
+            </p>
+          </article>
+          <article class="cw-panel">
+            <span class="cw-number">PREPARE</span>
+            <h3>Daily actions, reviewed</h3>
+            <p>
+              Climate controls, charge-limit changes, saved departure presets,
+              and destination sending. Presets load locally; saving one does not
+              schedule an action.
+            </p>
+          </article>
+          <article class="cw-panel">
+            <span class="cw-number">CONNECT</span>
+            <h3>AI with boundaries</h3>
+            <p>
+              A private ChatGPT MCP connection exposes status, destination,
+              climate, and charge-limit tools, gated by expiring permissions and
+              a revoke control.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section class="cw-section" aria-labelledby="demo-title">
+        <div class="cw-section-header">
+          <div>
+            <p class="cw-eyebrow">02 / Explore the interaction</p>
+            <h2 id="demo-title">Unknown is a state.<br />Never a zero.</h2>
+          </div>
+          <p>
+            Try three fictional reading states. The illustration below explains
+            the dashboard’s behavior; it is a standalone portfolio demo with no
+            vehicle connection.
+          </p>
+        </div>
+        <div class="cw-demo">
+          <div class="cw-demo-top">
+            <div>
+              <p class="cw-eyebrow">Sample data only</p>
+              <strong>Vehicle readings</strong>
+            </div>
+            <div>
+              <label for="reading-state">Choose a sample state</label
+              ><select id="reading-state">
+                <option value="fresh">Fresh reading</option>
+                <option value="stale">Asleep · last known</option>
+                <option value="unavailable">Reading unavailable</option>
+              </select>
+            </div>
+          </div>
+          <div id="sample-output" aria-live="polite" aria-atomic="true">
+            <div class="cw-mini-stats">
+              <div>
+                <span>Battery</span><strong id="sample-battery">72%</strong>
+              </div>
+              <div>
+                <span>Cabin</span><strong id="sample-cabin">76°F</strong>
+              </div>
+              <div>
+                <span>Charging</span><strong id="sample-charging">7 kW</strong>
+              </div>
+            </div>
+            <p id="sample-message" class="cw-state">
+              Fresh sample · just now. A measured cabin temperature is separate
+              from the requested target.
+            </p>
+          </div>
+        </div>
+        <noscript
+          ><p class="cw-caption">
+            With JavaScript off, this shows the fresh sample. A stale reading
+            keeps its last-known label; an unavailable reading shows a dash
+            instead of a fabricated value.
+          </p></noscript
+        >
+      </section>
+      <section
+        id="engineering"
+        class="cw-section"
+        aria-labelledby="engineering-title"
+      >
+        <p class="cw-eyebrow">03 / Engineering decisions</p>
+        <h2 id="engineering-title">Make every boundary explicit.</h2>
+        <div class="cw-split">
+          <article>
+            <h3>Accepted ≠ observed</h3>
+            <p class="cw-muted">
+              The gateway can report that Tesla accepted a command. The UI
+              verifies supported settings against a subsequent vehicle reading
+              and its subsystem timestamp. A climate setpoint is never presented
+              as the measured cabin temperature.
+            </p>
+            <p class="cw-muted">
+              If delivery is uncertain, the result stays uncertain. The app does
+              not automatically resend the physical action. MCP request IDs
+              retain results within the active process so a repeated ID cannot
+              silently deliver the same action again.
+            </p>
+          </article>
+          <article>
+            <h3>Wake with intent. Wait with a limit.</h3>
+            <p class="cw-muted">
+              Status reads stay passive. A requested command can wake the
+              vehicle once, then check readiness within a bounded wait. The web
+              flow allows up to one minute; it sends the command only when
+              readiness is confirmed in time.
+            </p>
+            <p class="cw-muted">
+              The gateway validates inputs and signed requests, including
+              timestamps and replay checks. These are layered protections, not a
+              claim of exactly-once delivery across restarts or network
+              failures.
+            </p>
+          </article>
+        </div>
+        <ol class="cw-flow" aria-label="Web command lifecycle">
+          <li>
+            <strong>Review the action</strong
+            ><span>Validate the requested change and confirm intent.</span>
+          </li>
+          <li>
+            <strong>Prepare the vehicle</strong
+            ><span>Wake if needed. Wait for readiness within a deadline.</span>
+          </li>
+          <li>
+            <strong>Send the command</strong
+            ><span>Track acceptance; preserve uncertainty on failure.</span>
+          </li>
+          <li>
+            <strong>Check the reading</strong
+            ><span
+              >Use fresh reported state to distinguish a result from an
+              acknowledgement.</span
+            >
+          </li>
+        </ol>
+      </section>
+      <section class="cw-section" aria-labelledby="architecture-title">
+        <div class="cw-section-header">
+          <div>
+            <p class="cw-eyebrow">04 / Architecture</p>
+            <h2 id="architecture-title">
+              Keep credentials<br />behind the controls.
+            </h2>
+          </div>
+          <p>
+            The browser never receives a raw signing key. Owner checks and
+            encrypted, secure HTTP-only sessions protect the app’s Tesla
+            authorization. A constrained command gateway separates the web
+            experience from the signing service.
+          </p>
+        </div>
+        <div
+          class="cw-architecture"
+          aria-label="Private app and MCP tools connect through a protected gateway and signer to Tesla Fleet API"
+        >
+          <div class="cw-node">
+            <strong>Private app + MCP</strong
+            ><span>Owner identity · scoped tools</span>
+          </div>
+          <span class="cw-arrow" aria-hidden="true">→</span>
+          <div class="cw-node">
+            <strong>Gateway + signer</strong
+            ><span>Validated, signed requests</span>
+          </div>
+          <span class="cw-arrow" aria-hidden="true">→</span>
+          <div class="cw-node">
+            <strong>Tesla Fleet API</strong
+            ><span>Readings · vehicle commands</span>
+          </div>
+        </div>
+        <div class="cw-split">
+          <article>
+            <h3>A narrow command path</h3>
+            <p class="cw-muted">
+              A Node gateway and Tesla signing service run in Docker on
+              DigitalOcean, behind Cloudflare access controls and a tunnel. The
+              gateway checks a separate secret and HMAC request signatures. The
+              raw signer is not publicly exposed.
+            </p>
+          </article>
+          <article>
+            <h3>Permission is temporary</h3>
+            <p class="cw-muted">
+              MCP grants separate status, navigation, climate, and charging
+              access. They expire, can be revoked, and are checked for every
+              tool call. Tesla access for MCP stays in process memory, bounded
+              by the grant and session expiry.
+            </p>
+          </article>
+        </div>
+        <ul class="cw-tags" aria-label="Technology stack">
+          <li>React</li>
+          <li>TypeScript</li>
+          <li>Vinext</li>
+          <li>Google model-viewer</li>
+          <li>Tesla Fleet API</li>
+          <li>Node.js</li>
+          <li>Docker</li>
+          <li>DigitalOcean</li>
+          <li>Cloudflare</li>
+          <li>MCP</li>
+        </ul>
+      </section>
+      <section class="cw-section" aria-labelledby="scope-title">
+        <div class="cw-split">
+          <div>
+            <p class="cw-eyebrow">05 / Deliberate scope</p>
+            <h2 id="scope-title">
+              Useful today.<br />Honest about its limits.
+            </h2>
+            <p class="cw-muted">
+              The result is a personal tool for a real vehicle, spanning an
+              interactive frontend, a protected command service, and
+              permission-scoped AI access. Its most important design choice is
+              preserving uncertainty wherever the system cannot verify an
+              outcome.
+            </p>
+          </div>
+          <div>
+            <ul class="cw-list">
+              <li>
+                <strong>One destination at a time.</strong> An ordered stop list
+                lets the owner review and send a selected stop. It does not send
+                a complete multi-stop itinerary, optimize routes, or detect
+                arrivals.
+              </li>
+              <li>
+                <strong>Presets are not schedules.</strong> Saved departure
+                settings stay in the browser and require an explicit action.
+                Autonomous scheduling is outside the verified scope.
+              </li>
+              <li>
+                <strong>No background-telemetry claim.</strong> This case study
+                covers requested readings and controls, not continuous vehicle
+                monitoring or a working telemetry history.
+              </li>
+              <li>
+                <strong>Private by design.</strong> The source and operational
+                app remain private. This page provides an ungated explanation
+                and fictional sample data.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <footer class="cw-footer">
+        <a href="../index.html#projects">← Back to all projects</a
+        ><a href="../index.html#about">About Solomon / Contact ↗</a>
+      </footer>
+    </main>
+  </body>
+</html>

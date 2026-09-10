@@ -28,6 +28,7 @@ let openBball = function () {};
   if (!overlay || !input || !list) return;
 
   const commands = [
+    { label: 'Explore CabinWise', hint: 'case study', run: () => (window.location.href = 'cabinwise/') },
     { label: 'Go to Resume', hint: 'section', run: () => scrollToId('resume') },
     { label: 'Go to Projects', hint: 'section', run: () => scrollToId('projects') },
     { label: 'Go to About / Contact', hint: 'section', run: () => scrollToId('about') },
