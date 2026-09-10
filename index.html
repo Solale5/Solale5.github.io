@@ -1,359 +1,596 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="description" content="Solomon Alemu - Software Development Engineer at Zillow Group. Data engineering, streaming pipelines, Python, PySpark, Databricks." />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/cabinwise.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/jpg" href="images/cropped-s-favicon.ico" />
-    <link rel="shortcut icon" type="image/jpg" href="images/cropped-s-favicon.ico" />
-    <title>Home</title>
+    <meta charset="utf-8" />
+    <meta
+      content="Solomon Alemu - Software Development Engineer at Zillow Group. Data engineering, streaming pipelines, Python, PySpark, Databricks."
+      name="description"
+    />
+    <link
+      crossorigin="anonymous"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      rel="stylesheet"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/cabinwise.css" rel="stylesheet" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link href="images/cropped-s-favicon.ico" rel="icon" type="image/jpg" />
+    <link
+      href="images/cropped-s-favicon.ico"
+      rel="shortcut icon"
+      type="image/jpg"
+    />
+    <title>Solomon Alemu — Software Engineer</title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-07PMVMNQ9D"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script
+      async=""
+      src="https://www.googletagmanager.com/gtag/js?id=G-07PMVMNQ9D"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
 
-  gtag('config', 'G-07PMVMNQ9D');
-</script>
+      gtag('config', 'G-07PMVMNQ9D');
+    </script>
+    <link href="css/portfolio.css" rel="stylesheet" />
   </head>
-  <header>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark " style="background-color:black" >
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#Home">Home</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+  <body class="portfolio">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav aria-label="Main navigation" class="site-nav">
+        <a class="site-brand" href="#Home"
+          >SA<span class="brand-dot">.</span
+          ><span class="brand-name">Solomon Alemu</span></a
+        ><button
+          aria-controls="site-links"
+          aria-expanded="false"
+          id="menu-toggle"
+          type="button"
+        >
+          Menu <span aria-hidden="true">☰</span>
+        </button>
+        <div class="site-links" id="site-links">
+          <a href="#projects">Projects</a><a href="#resume">Experience</a
+          ><a href="#about">About / Contact</a
+          ><button
+            aria-label="Open quick navigation"
+            class="cmdk-trigger"
+            id="cmdk-trigger"
+            type="button"
+          >
+            ⌘K
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link" aria-current="page"  href="#resume">Resume</a>
-              <a class="nav-link" href="#projects">Projects</a>
-              <a class="nav-link" href="#about">About Me / Contact</a>
-            </div>
-            <div class="nav-socials">
-              <a href="https://www.linkedin.com/in/solomon-a-00b67a1a3/" target="_blank" rel="noopener"><img src="images/Linkedin.png" alt="LinkedIn"></a>
-              <a href="https://github.com/Solale5" target="_blank" rel="noopener"><img src="images/github.png" alt="GitHub"></a>
-              <button id="cmdk-trigger" class="cmdk-trigger" type="button" title="Quick nav (Ctrl/Cmd+K)">⌘K</button>
-            </div>
-          </div>
         </div>
       </nav>
-  </header>
-
-  <body>
-
+    </header>
     <div class="scroll-progress" id="scrollProgress"></div>
-
-    <div class="hero-image" id="Home">
-        <div class="hero-text section"> <p>Solomon Alemu</p></div>
-        <div class="container">
-         
-            <p class="first section" >I'm <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+    <main id="main">
+      <section class="intro" id="Home">
+        <div class="intro-copy">
+          <p class="eyebrow">Software engineer · Zillow Group</p>
+          <h1>Solomon<br /><span>Alemu.</span></h1>
+          <p class="intro-description">
+            From streaming data pipelines to software that connects with the
+            physical world.
+          </p>
+          <div class="intro-actions">
+            <a class="primary-action" href="#projects"
+              >Explore my work <span aria-hidden="true">↘</span></a
+            ><a class="text-action" href="#about">A little about me ↗</a>
           </div>
-          <div class="arrow section">
-            <span></span>
-            <span></span>
-            <span></span>
-
+        </div>
+        <div class="intro-aside">
+          <div class="portrait-frame">
+            <img
+              alt="Solomon Alemu"
+              height="1212"
+              src="images/sol.png"
+              width="940"
+            /><span class="portrait-label"
+              >Engineer. Builder. Basketball enthusiast.</span
+            >
           </div>
+          <a class="latest-work" href="cabinwise/"
+            ><span
+              ><small>Latest project / 2026</small
+              ><strong>CabinWise</strong></span
+            ><span aria-hidden="true">↗</span></a
+          >
         </div>
-      </div>
-      
-        
-      </div>
-   <div class="super-container "> 
-   <div class="resume section" id="resume">
-    <h4 >Summary </h4>
-    <p> </p>
-    <p><em>
-        Software Development Engineer at Zillow Group, working on data engineering and streaming pipelines. Always working to improve my skills and learn more every day.
-      </em></p>
-      <p>Santa Clara, California</p>
-      <p>delen901@gmail.com</p>
-   </div>
-    
-    <div class="container1 section">
-        
-      
-        <div class="skills">
-          <h1 class="section-title">Skills</h1>
-          <ul>
-            <li>Python</li>
-            <li>PySpark</li>
-            <li>SQL</li>
-            <li>Java</li>
-            <li>JavaScript</li>
-            <li>Databricks</li>
-            <li>Apache Kafka</li>
-            <li>AWS</li>
-            <li>Terraform</li>
-            <li>Git</li>
-            <li>React</li>
-            <li>Node.js</li>
-          </ul>
+        <div class="intro-foot">
+          <span>Data engineering &amp; full-stack development</span
+          ><span>Python / React / Cloud infrastructure</span>
         </div>
-        <div class="education "  >
-          <h1  class="section-title">Bachelors of Science: Computer Science</h1>
-          <h5>Class of 2023</h5>
-          <p><em>San Jose State University, San Jose, CA</em></p>
-          <p><strong>GPA:</strong> 3.7</p>
-          <p><strong>Relevant Coursework:</strong> Object Oriented Design, Data Structures & Algorithms, Artificial Intelligence, and Computer Systems</p>
+      </section>
+      <section class="site-section" id="projects">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">01 / Selected work</p>
+            <h2>Ideas into software.</h2>
+          </div>
+          <p>
+            Personal projects, practical tools,<br />and the engineering behind
+            them.
+          </p>
         </div>
-       </div>
-       <h2 class="section-title section">Work Experience</h2>
-       <div class="work-exp section">
-        <h4 class="section-title">Zillow Group</h4>
-    <h5>(06/2022 to Present)</h5>
-    <p class="left-align"><em>
-      Software Development Engineer III | Data Engineering | Remote
-      </em>
-    <ul>
-      <li>
-        Build and own production streaming data pipelines (Kafka to Delta Lake) on Databricks using Python and PySpark
-      </li>
-      <li>
-        Led infrastructure work for a company-wide customer data platform migration, including Terraform-provisioned AWS infrastructure
-      </li>
-      <li>
-        Design data products that power marketing and customer-facing systems across the company
-      </li>
-    </ul></p>
-
-    <hr class="role-divider">
-
-    <h5>(06/2022 to 08/2022)</h5>
-    <p class="left-align"><em>
-      Software Development Engineering Intern | Remote
-      </em>
-    <ul>
-      <li>
-        Utilized Cypress and Node.js to develop an end-to-end testing strategy for tracking web analytics on Zillow.com and incorporated it into our deployment pipeline
-      </li>
-      <li>
-        Improved upon the developer onboarding experience and all documentation
-      </li>
-      <li>
-        Implemented bug fixes and performance improvements on newly released features using Node.js
-      </li>
-      <li>
-        Presented cypress testing project to organization higher ups
-      </li>
-    </ul></p>
-    </div>
-       <div class="work-exp section">
-        <h4 class="section-title">Management Leadership for Tomorrow Career Prep Fellow  </h4>
-    <h5>(03/2021 to 09/2022)</h5>
-    <p class="left-align"><em>
-     Management Leadership for Tomorrow | Career Prep Fellow | Washington, D.C.
-      </em>
-    <ul>
-      <li>
-        Selected as one of 1,000 for an 18-month professional development program for high-achieving diverse talent
-      </li>
-      <li>
-        Completed assignments and projects to hone analytical, quantitative and communication skills
-      </li>
-      <li>
-        Participated in conferences hosted by industry leaders
-      </li>
-    </ul></p>
-
-    <a href="https://mlt.org/"> click here to see MLT's website</a>
-    </div>
-        <div class="work-exp2 section">
-            <h4 class="section-title">CodePath Technical Interview Prep</h4>
-            <h5>(06/2021 to 09/2021)</h5>
-            <p class="left-align"><em> Student | Remote
-            </em>
-            <ul>
-              <li>
-                12 week program for college students
-              </li>
-              <li>
-                Lectures and algorithm labs
-              </li>
-              <li>
-                Mentorship from industry professionals
-              </li>
-              <li>
-                Data Structures, Algorithms, Big O, and more
-              </li>
-            </ul></p>
-        </div>
-          <div class="Activities-Honors section">
-            <h3 class="section-title">Activities and Honors</h3>
-            <p> 2019 Deans Scholar</p>
-            <p> 2020 Deans Scholar</p>
-            <p> 2021 Deans Scholar</p>
-            <p> Habesha Student Association and SJSU Computer Science Club member </p>
-            </div>
-      </div>
-   </div>
-
-    <div class="super-container2" id="projects">
-      <div class="proj-header" >
-        <h1 class="section-title section">Projects</h1>
-      </div>
-
-      <article class="cw cw-feature" aria-labelledby="cabinwise-title">
-        <div><p class="cw-eyebrow">Featured project / 2026</p><h2 id="cabinwise-title">CabinWise</h2><p class="cw-feature-lead">Software that reaches beyond the screen.</p><p class="cw-muted">A personal Tesla companion with an interactive 3D vehicle view, daily controls, and a private ChatGPT connection. Built around the realities of a sleeping vehicle, uncertain command delivery, and scoped AI access.</p><ul class="cw-tags" aria-label="Selected technologies"><li>React + TypeScript</li><li>Tesla Fleet API</li><li>Node.js</li><li>MCP</li></ul><a class="cw-button" href="cabinwise/">Explore the case study <span aria-hidden="true">↗</span></a></div>
-        <div class="cw-visual"><div class="cw-visual-head"><span>CabinWise / Model 3</span><span>3D PREVIEW · SAMPLE DATA</span></div><div class="cw-model-stage" data-model-src="cabinwise/models/model-3-highland.glb"><p class="cw-model-status" role="status">Enable JavaScript to explore the Model 3 in 3D.</p></div><div class="cw-model-toolbar"><span>Drag or use arrow keys to rotate</span><button class="cw-model-reset" type="button" disabled>Reset view</button></div><div class="cw-mini-stats"><div><span>Battery</span><strong>72%</strong></div><div><span>Cabin</span><strong>76°F</strong></div><div><span>Charge limit</span><strong>80%</strong></div></div><details class="cw-model-credit"><summary>About this 3D view</summary><p>Same Model 3 asset and camera setup as CabinWise. Glass and wheel overlays cleaned up; paint materials adjusted. Appearance is illustrative, not live vehicle state. Model by <a href="https://sketchfab.com/3d-models/2024-tesla-model-3-interior-61ddcbdbd3854c239e0c95bf60b00022" target="_blank" rel="noopener noreferrer">tonielpro520</a>, licensed <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>.</p></details></div>
-      </article>
-
-      <div class="container3 section">
-        <div class="projectbody">
-          <h1 class="section-title">US 30-Year Mortgage Rate Tracker</h1>
-          <img class="pic" src="images/mortgage-rate-tracker-preview.png" alt="">
-          <p class="proj-p">A small data pipeline: a Python script pulls the public FRED mortgage-rate series, cleans it with pandas, and writes a static data.json that a dashboard page reads &mdash; current rate, year-over-year change, and all-time high/low, plus a 5-year trend chart.</p>
-          <a class="link" href="mortgage-rate-tracker/index.html"> <p><em>click here to try the mortgage rate tracker</em> </p></a>
-          <a class="link" href="https://github.com/Solale5/Solale5.github.io/tree/main/mortgage-rate-tracker" target="_blank" rel="noopener"> <p><em>view the pipeline source</em> </p></a>
-      </div>
-      </div>
-
-      <div class="container3 section">
-        <div class="projectbody">
-          <h1 class="section-title">Final Grade Calculator & GPA calculator</h1>
-          <img class="pic" src="images/Screen Shot 2021-01-04 at 3.21.30 PM.png" alt="">
-          <p class="proj-p">A final grade calculator  and GPA calculator were both very useful to me, so I decided to make them myself. I sent the link to my friends and now they use it too. Click the link below to try them out! </p>
-          <a  class="link" href="gpacalc/index.html"> <p><em>click here to try the gpa calculator</em> </p></a>
-          <a  class="link" href="finalGradeCalculator/index.html"> <p><em>click here to try out the final grade calculator</em> </p></a>
-      </div>
-      </div>
-       <div class="container3 section">
-
-         
-        <h1 class="section-title" >Java Snake and Apple game</h1>
-        <video class="snakegame" width="320" height="240" src="videos/snakegame.mp4" controls></video>
-
-        <div class="snakegmedescribe">
-            <p class="proj-p">
-                 This game uses Java's Swing  graphical user interface to display
-                the game. As you can see im not very good at the game myself. I used a command line script  to automate the tedious "cd" and "javac" commands 
-                in the video.
-                
-              </p>
-            <p class="snakelink">
-              <a href="https://github.com/Solale5/SnakeGame">Link to source code</a>
+        <article aria-labelledby="cabinwise-title" class="cw cw-feature">
+          <div>
+            <p class="cw-eyebrow">Featured project / 2026</p>
+            <h2 id="cabinwise-title">CabinWise</h2>
+            <p class="cw-feature-lead">
+              Software that reaches beyond the screen.
             </p>
-           
-    
+            <p class="cw-muted">
+              A personal Tesla companion with an interactive 3D vehicle view,
+              daily controls, and a private ChatGPT connection. Built around the
+              realities of a sleeping vehicle, uncertain command delivery, and
+              scoped AI access.
+            </p>
+            <ul aria-label="Selected technologies" class="cw-tags">
+              <li>React + TypeScript</li>
+              <li>Tesla Fleet API</li>
+              <li>Node.js</li>
+              <li>MCP</li>
+            </ul>
+            <a class="cw-button" href="cabinwise/"
+              >Explore the case study <span aria-hidden="true">↗</span></a
+            >
+          </div>
+          <div class="cw-visual">
+            <div class="cw-visual-head">
+              <span>CabinWise / Model 3</span
+              ><span>3D PREVIEW · SAMPLE DATA</span>
             </div>
-            </div>
-            <div class="container3 section">
-              <h1 class="section-title ">Java Calendar App</h1>
-              <img class="pic" src="images/calendar.png" alt="">
-             
-              <p class="proj-p"> A Calendar Application that lets you Create Events that are recurring or one time. The events are stored in a text file that is generated and read from by the program. The project follows the MVC design pattern. You can browse events on different days using the arrow buttons, or just click on a day to see what events are taking place on a given day.</a>
+            <div
+              class="cw-model-stage"
+              data-model-src="cabinwise/models/model-3-highland.glb"
+            >
+              <p class="cw-model-status" role="status">
+                Enable JavaScript to explore the Model 3 in 3D.
               </p>
-
             </div>
-            <div class="container3 section">
-              <h1 class="section-title ">Spartan Bank</h1>
-              <p class="proj-p">Full-stack banking app (React, Node.js, MySQL, Android) with account management, fund transfers, and nearby ATM lookup, built with a team for SJSU CS160. Handles login/authentication, balances and transaction history, and transfers/deposits/withdrawals.</p>
-              <a class="link" href="https://bankapp-cs160-group1.netlify.app/" target="_blank" rel="noopener"> <p><em>click here to try the live app</em> </p></a>
-              <a class="link" href="https://github.com/Solale5/BankApp" target="_blank" rel="noopener"> <p><em>view the source code</em> </p></a>
+            <div class="cw-model-toolbar">
+              <span>Drag or use arrow keys to rotate</span
+              ><button class="cw-model-reset" disabled="" type="button">
+                Reset view
+              </button>
             </div>
-    </div>
-    <div class="hero-image3" >
-        <div class="hero-text section"> <p>About Me</p></div>
-        <button id="bball-trigger" class="bball-trigger" type="button" title="Psst... take a shot" aria-label="Play a basketball mini-game">🏀</button>
-        <div class="arrow ">
-          <span></span>
-          <span></span>
-          <span></span>
-
+            <div class="cw-mini-stats">
+              <div><span>Battery</span><strong>72%</strong></div>
+              <div><span>Cabin</span><strong>76°F</strong></div>
+              <div><span>Charge limit</span><strong>80%</strong></div>
+            </div>
+            <details class="cw-model-credit">
+              <summary>About this 3D view</summary>
+              <p>
+                Same Model 3 asset and camera setup as CabinWise. Glass and
+                wheel overlays cleaned up; paint materials adjusted. Appearance
+                is illustrative, not live vehicle state. Model by
+                <a
+                  href="https://sketchfab.com/3d-models/2024-tesla-model-3-interior-61ddcbdbd3854c239e0c95bf60b00022"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  >tonielpro520</a
+                >, licensed
+                <a
+                  href="https://creativecommons.org/licenses/by/4.0/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  >CC BY 4.0</a
+                >.
+              </p>
+            </details>
+          </div>
+        </article>
+        <div class="project-grid">
+          <article class="project-card">
+            <p class="project-index">02 / PROJECT</p>
+            <div class="projectbody">
+              <h3 class="section-title">US 30-Year Mortgage Rate Tracker</h3>
+              <img
+                alt="US 30-Year Mortgage Rate Tracker preview"
+                class="pic"
+                loading="lazy"
+                src="images/mortgage-rate-tracker-preview.png"
+              />
+              <p class="proj-p">
+                A small data pipeline: a Python script pulls the public FRED
+                mortgage-rate series, cleans it with pandas, and writes a static
+                data.json that a dashboard page reads — current rate,
+                year-over-year change, and all-time high/low, plus a 5-year
+                trend chart.
+              </p>
+              <a class="link" href="mortgage-rate-tracker/index.html"
+                >Explore the dashboard ↗</a
+              >
+              <a
+                class="link"
+                href="https://github.com/Solale5/Solale5.github.io/tree/main/mortgage-rate-tracker"
+                rel="noopener"
+                target="_blank"
+                >View source ↗</a
+              >
+            </div>
+          </article>
+          <article class="project-card">
+            <p class="project-index">03 / PROJECT</p>
+            <div class="projectbody">
+              <h3 class="section-title">
+                Final Grade Calculator &amp; GPA calculator
+              </h3>
+              <img
+                alt="Final Grade Calculator &amp; GPA calculator preview"
+                class="pic"
+                loading="lazy"
+                src="images/Screen Shot 2021-01-04 at 3.21.30 PM.png"
+              />
+              <p class="proj-p">
+                A final grade calculator and GPA calculator were both very
+                useful to me, so I decided to make them myself. I sent the link
+                to my friends and now they use it too. Click the link below to
+                try them out!
+              </p>
+              <a class="link" href="gpacalc/index.html">GPA calculator ↗</a>
+              <a class="link" href="finalGradeCalculator/index.html"
+                >Final grade calculator ↗</a
+              >
+            </div>
+          </article>
+          <article class="project-card">
+            <p class="project-index">04 / PROJECT</p>
+            <h3 class="section-title">Java Snake and Apple game</h3>
+            <video
+              class="snakegame"
+              controls=""
+              height="240"
+              src="videos/snakegame.mp4"
+              width="320"
+            ></video>
+            <div class="snakegmedescribe">
+              <p class="proj-p">
+                This game uses Java's Swing graphical user interface to display
+                the game. As you can see im not very good at the game myself. I
+                used a command line script to automate the tedious "cd" and
+                "javac" commands in the video.
+              </p>
+              <p class="snakelink">
+                <a href="https://github.com/Solale5/SnakeGame"
+                  >View source ↗</a
+                >
+              </p>
+            </div>
+          </article>
+          <article class="project-card">
+            <p class="project-index">05 / PROJECT</p>
+            <h3 class="section-title">Java Calendar App</h3>
+            <img
+              alt="Java Calendar App preview"
+              class="pic"
+              loading="lazy"
+              src="images/calendar.png"
+            />
+            <p class="proj-p">
+              A Calendar Application that lets you Create Events that are
+              recurring or one time. The events are stored in a text file that
+              is generated and read from by the program. The project follows the
+              MVC design pattern. You can browse events on different days using
+              the arrow buttons, or just click on a day to see what events are
+              taking place on a given day.
+            </p>
+          </article>
+          <article class="project-card">
+            <p class="project-index">06 / PROJECT</p>
+            <h3 class="section-title">Spartan Bank</h3>
+            <p class="proj-p">
+              Full-stack banking app (React, Node.js, MySQL, Android) with
+              account management, fund transfers, and nearby ATM lookup, built
+              with a team for SJSU CS160. Handles login/authentication, balances
+              and transaction history, and transfers/deposits/withdrawals.
+            </p>
+            <a
+              class="link"
+              href="https://bankapp-cs160-group1.netlify.app/"
+              rel="noopener"
+              target="_blank"
+              >Open the app ↗</a
+            >
+            <a
+              class="link"
+              href="https://github.com/Solale5/BankApp"
+              rel="noopener"
+              target="_blank"
+              >View source ↗</a
+            >
+          </article>
         </div>
+      </section>
+      <section class="site-section" id="resume">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">02 / Experience</p>
+            <h2>Systems that do<br />the heavy lifting.</h2>
+          </div>
+          <p>
+            Data engineering, streaming pipelines,<br />and a foundation in
+            computer science.
+          </p>
         </div>
-        
-
-        <div class="super-container3" id="about">
-           
-            <div class="container4 section">
-              <h1 class="section-title"  >About</h1>
-              <p>I was first introduced to programming through a friend that I played basketball with during my Junior year of high school. He told me about how he was programming a decision-based game that took strings as an input. We had a discussion about programming and some cool things you could do with it. Since I was intrigued, I decided to conduct further research. Although I was undeclared when I enrolled in college, my interest grew stronger and decided to major in computer science after taking the Intro to Programming course at SJSU. I've since graduated and now work as a Software Development Engineer at Zillow Group, focusing on data engineering and building the streaming systems that power the company's products. I keep an open mind to new ways of doing things and am always working to develop my skills further.</p>
-              <div class="row align-items-center">
-                  <div class="col-lg-4" data-aos="fade-right">
-                    <img src="images/sol.png" class="img-fluid section" alt="">
-                    
+        <div class="experience-layout">
+          <aside>
+            <div class="resume-summary">
+              <h3>Summary</h3>
+              <p></p>
+              <p>
+                <em>
+                  Software Development Engineer at Zillow Group, working on data
+                  engineering and streaming pipelines. Always working to improve
+                  my skills and learn more every day.
+                </em>
+              </p>
+              <p>Santa Clara, California</p>
+              <p>delen901@gmail.com</p>
+            </div>
+            <div class="skills">
+              <h3 class="section-title">Skills</h3>
+              <ul>
+                <li>Python</li>
+                <li>PySpark</li>
+                <li>SQL</li>
+                <li>Java</li>
+                <li>JavaScript</li>
+                <li>Databricks</li>
+                <li>Apache Kafka</li>
+                <li>AWS</li>
+                <li>Terraform</li>
+                <li>Git</li>
+                <li>React</li>
+                <li>Node.js</li>
+              </ul>
+            </div>
+          </aside>
+          <div class="experience-list">
+            <article class="experience-card">
+              <h3 class="section-title">Zillow Group</h3>
+              <p class="experience-date">(06/2022 to Present)</p>
+              <div class="left-align">
+                <em>
+                  Software Development Engineer III | Data Engineering | Remote
+                </em>
+                <ul>
+                  <li>
+                    Build and own production streaming data pipelines (Kafka to
+                    Delta Lake) on Databricks using Python and PySpark
+                  </li>
+                  <li>
+                    Led infrastructure work for a company-wide customer data
+                    platform migration, including Terraform-provisioned AWS
+                    infrastructure
+                  </li>
+                  <li>
+                    Design data products that power marketing and
+                    customer-facing systems across the company
+                  </li>
+                </ul>
+              </div>
+              <hr class="role-divider" />
+              <p class="experience-date">(06/2022 to 08/2022)</p>
+              <div class="left-align">
+                <em> Software Development Engineering Intern | Remote </em>
+                <ul>
+                  <li>
+                    Utilized Cypress and Node.js to develop an end-to-end
+                    testing strategy for tracking web analytics on Zillow.com
+                    and incorporated it into our deployment pipeline
+                  </li>
+                  <li>
+                    Improved upon the developer onboarding experience and all
+                    documentation
+                  </li>
+                  <li>
+                    Implemented bug fixes and performance improvements on newly
+                    released features using Node.js
+                  </li>
+                  <li>
+                    Presented cypress testing project to organization higher ups
+                  </li>
+                </ul>
+              </div>
+            </article>
+            <article class="experience-card">
+              <h3 class="section-title">
+                Management Leadership for Tomorrow Career Prep Fellow
+              </h3>
+              <p class="experience-date">(03/2021 to 09/2022)</p>
+              <div class="left-align">
+                <em>
+                  Management Leadership for Tomorrow | Career Prep Fellow |
+                  Washington, D.C.
+                </em>
+                <ul>
+                  <li>
+                    Selected as one of 1,000 for an 18-month professional
+                    development program for high-achieving diverse talent
+                  </li>
+                  <li>
+                    Completed assignments and projects to hone analytical,
+                    quantitative and communication skills
+                  </li>
+                  <li>
+                    Participated in conferences hosted by industry leaders
+                  </li>
+                </ul>
+              </div>
+              <a href="https://mlt.org/"> click here to see MLT's website</a>
+            </article>
+            <article class="experience-card">
+              <h3 class="section-title">CodePath Technical Interview Prep</h3>
+              <p class="experience-date">(06/2021 to 09/2021)</p>
+              <div class="left-align">
+                <em> Student | Remote </em>
+                <ul>
+                  <li>12 week program for college students</li>
+                  <li>Lectures and algorithm labs</li>
+                  <li>Mentorship from industry professionals</li>
+                  <li>Data Structures, Algorithms, Big O, and more</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="education-grid">
+          <div class="education">
+            <h3 class="section-title">
+              Bachelors of Science: Computer Science
+            </h3>
+            <p>Class of 2023</p>
+            <p><em>San Jose State University, San Jose, CA</em></p>
+            <p><strong>GPA:</strong> 3.7</p>
+            <p>
+              <strong>Relevant Coursework:</strong> Object Oriented Design, Data
+              Structures &amp; Algorithms, Artificial Intelligence, and Computer
+              Systems
+            </p>
+          </div>
+          <div class="Activities-Honors">
+            <h3 class="section-title">Activities and Honors</h3>
+            <p>2019 Deans Scholar</p>
+            <p>2020 Deans Scholar</p>
+            <p>2021 Deans Scholar</p>
+            <p>
+              Habesha Student Association and SJSU Computer Science Club member
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="site-section" id="about">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">03 / Beyond the code</p>
+            <h2>Always curious.</h2>
+          </div>
+          <button class="hobby-button" id="bball-trigger" type="button">
+            Basketball enthusiast <span aria-hidden="true">↗</span>
+          </button>
+        </div>
+        <div class="about-content">
+          <div class="container4">
+            <p>
+              I was first introduced to programming through a friend that I
+              played basketball with during my Junior year of high school. He
+              told me about how he was programming a decision-based game that
+              took strings as an input. We had a discussion about programming
+              and some cool things you could do with it. Since I was intrigued,
+              I decided to conduct further research. Although I was undeclared
+              when I enrolled in college, my interest grew stronger and decided
+              to major in computer science after taking the Intro to Programming
+              course at SJSU. I've since graduated and now work as a Software
+              Development Engineer at Zillow Group, focusing on data engineering
+              and building the streaming systems that power the company's
+              products. I keep an open mind to new ways of doing things and am
+              always working to develop my skills further.
+            </p>
+            <div class="row align-items-center">
+              <div class="col-lg-4" data-aos="fade-right">
+                <img
+                  alt="Solomon Alemu"
+                  class="img-fluid"
+                  loading="lazy"
+                  src="images/sol.png"
+                />
+              </div>
+              <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+                <h3>Software Development Engineer at Zillow Group.</h3>
+                <p class="font-italic"></p>
+                <div class="row">
+                  <div class="col-lg-6">
+                    <ul>
+                      <li>
+                        <i class="icofont-rounded-right"></i>
+                        <strong>Website:</strong> www.solomonalemu.com
+                      </li>
+                      <li>
+                        <i class="icofont-rounded-right"></i>
+                        <strong>City:</strong> Santa Clara, California
+                      </li>
+                    </ul>
                   </div>
-                  <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-                    <h3>Software Development Engineer at Zillow Group.</h3>
-                    <p class="font-italic">
-
-                    </p>
-                    <div class="row">
-                      <div class="col-lg-6">
-                        <ul>
-                          <li><i class="icofont-rounded-right"></i> <strong>Website:</strong> www.solomonalemu.com</li>
-                          <li><i class="icofont-rounded-right"></i> <strong>City:</strong> Santa Clara, California</li>
-                        </ul>
-                      </div>
-                      <div class="col-lg-6">
-                        <ul>
-                          <li><i class="icofont-rounded-right"></i> <strong>Degree:</strong> BS Computer Science 2023</li>
-                          <li><i class="icofont-rounded-right"></i> <strong>Email:</strong> delen901@gmail.com </li>
-                        </ul>
-
-                      </div>
-
-                    </div>
-                    <p>
-                  
-                    </p>
+                  <div class="col-lg-6">
+                    <ul>
+                      <li>
+                        <i class="icofont-rounded-right"></i>
+                        <strong>Degree:</strong> BS Computer Science 2023
+                      </li>
+                      <li>
+                        <i class="icofont-rounded-right"></i>
+                        <strong>Email:</strong> delen901@gmail.com
+                      </li>
+                    </ul>
                   </div>
                 </div>
-                  <h2 class="section-title">Links to other medias</h2>
-
-                  <div class="socials" >
-                    <p>
-                      <a href="https://www.linkedin.com/in/solomon-a-00b67a1a3/"><img class="linkedin" src="images/Linkedin.png" alt=""></a>
-                      
-                      <a href="https://github.com/Solale5"><img class="github" src="images/github.png" alt=""></a>
-                    </p>
-                   
-                    
-                  </div>
+                <p></p>
+              </div>
             </div>
-        
+            <h2 class="section-title">Find me online</h2>
+            <div class="socials">
+              <p>
+                <a href="https://www.linkedin.com/in/solomon-a-00b67a1a3/"
+                  ><img
+                    alt="LinkedIn"
+                    class="linkedin"
+                    src="images/Linkedin.png"
+                /></a>
+                <a href="https://github.com/Solale5"
+                  ><img alt="GitHub" class="github" src="images/github.png"
+                /></a>
+              </p>
+            </div>
+          </div>
         </div>
-        </div>
- 
-
-</div> 
-    
-
-
-    <!-- Command palette -->
-    <div id="cmdk-overlay" class="cmdk-overlay" hidden>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <a class="footer-contact" href="mailto:delen901@gmail.com"
+        >Let’s connect <span aria-hidden="true">↗</span></a
+      >
+      <div><span>Solomon Alemu</span><a href="#Home">Back to top ↑</a></div>
+    </footer>
+    <div class="cmdk-overlay" hidden="" id="cmdk-overlay">
       <div class="cmdk-modal">
-        <input type="text" id="cmdk-input" class="cmdk-input" placeholder="Type a command... (Esc to close)" autocomplete="off" />
-        <ul id="cmdk-list" class="cmdk-list"></ul>
+        <input
+          autocomplete="off"
+          class="cmdk-input"
+          id="cmdk-input"
+          placeholder="Type a command... (Esc to close)"
+          type="text"
+        />
+        <ul class="cmdk-list" id="cmdk-list"></ul>
       </div>
     </div>
-
-    <!-- Basketball mini-game -->
-    <div id="bball-overlay" class="bball-overlay" hidden>
+    <div class="bball-overlay" hidden="" id="bball-overlay">
       <div class="bball-modal">
-        <button id="bball-close" class="bball-close" type="button" aria-label="Close">&times;</button>
+        <button
+          aria-label="Close"
+          class="bball-close"
+          id="bball-close"
+          type="button"
+        >
+          ×
+        </button>
         <h3 class="section-title">Quick shootaround</h3>
         <p class="bball-score">Score: <span id="bball-score">0</span></p>
-        <canvas id="bball-canvas" width="340" height="420"></canvas>
-        <p class="bball-hint">Click anywhere in the court to shoot toward that spot.</p>
+        <canvas height="420" id="bball-canvas" width="340"></canvas>
+        <p class="bball-hint">
+          Click anywhere in the court to shoot toward that spot.
+        </p>
       </div>
     </div>
-
-    <!-- Konami code toast -->
-    <div id="konami-toast" class="konami-toast" hidden></div>
-
+    <div class="konami-toast" hidden="" id="konami-toast"></div>
     <script src="code.js"></script>
     <script src="interactive.js"></script>
-    <script type="module" src="cabinwise/vehicle-preview.js"></script>
-    <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="cabinwise/vehicle-preview.js" type="module"></script>
   </body>
-  
 </html>

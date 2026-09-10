@@ -10,7 +10,9 @@ let openBball = function () {};
   if (!bar) return;
   function update() {
     const scrollTop = window.scrollY || document.documentElement.scrollTop;
-    const docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const docHeight =
+      document.documentElement.scrollHeight -
+      document.documentElement.clientHeight;
     const pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
     bar.style.width = pct + '%';
   }
@@ -28,17 +30,47 @@ let openBball = function () {};
   if (!overlay || !input || !list) return;
 
   const commands = [
-    { label: 'Explore CabinWise', hint: 'case study', run: () => (window.location.href = 'cabinwise/') },
-    { label: 'Go to Resume', hint: 'section', run: () => scrollToId('resume') },
-    { label: 'Go to Projects', hint: 'section', run: () => scrollToId('projects') },
-    { label: 'Go to About / Contact', hint: 'section', run: () => scrollToId('about') },
-    { label: 'Open GitHub', hint: 'external', run: () => window.open('https://github.com/Solale5', '_blank', 'noopener') },
+    {
+      label: 'Explore CabinWise',
+      hint: 'case study',
+      run: () => (window.location.href = 'cabinwise/'),
+    },
+    {
+      label: 'Go to Experience',
+      hint: 'section',
+      run: () => scrollToId('resume'),
+    },
+    {
+      label: 'Go to Projects',
+      hint: 'section',
+      run: () => scrollToId('projects'),
+    },
+    {
+      label: 'Go to About / Contact',
+      hint: 'section',
+      run: () => scrollToId('about'),
+    },
+    {
+      label: 'Open GitHub',
+      hint: 'external',
+      run: () =>
+        window.open('https://github.com/Solale5', '_blank', 'noopener'),
+    },
     {
       label: 'Open LinkedIn',
       hint: 'external',
-      run: () => window.open('https://www.linkedin.com/in/solomon-a-00b67a1a3/', '_blank', 'noopener'),
+      run: () =>
+        window.open(
+          'https://www.linkedin.com/in/solomon-a-00b67a1a3/',
+          '_blank',
+          'noopener',
+        ),
     },
-    { label: 'Email me', hint: 'mailto', run: () => (window.location.href = 'mailto:delen901@gmail.com') },
+    {
+      label: 'Email me',
+      hint: 'mailto',
+      run: () => (window.location.href = 'mailto:delen901@gmail.com'),
+    },
     {
       label: 'Try the Mortgage Rate Tracker',
       hint: 'project',
@@ -47,16 +79,28 @@ let openBball = function () {};
     {
       label: 'View Spartan Bank (live demo)',
       hint: 'project',
-      run: () => window.open('https://bankapp-cs160-group1.netlify.app/', '_blank', 'noopener'),
+      run: () =>
+        window.open(
+          'https://bankapp-cs160-group1.netlify.app/',
+          '_blank',
+          'noopener',
+        ),
     },
-    { label: 'Play a quick basketball shootaround', hint: 'easter egg', run: () => openBball() },
+    {
+      label: 'Play a quick basketball shootaround',
+      hint: 'easter egg',
+      run: () => openBball(),
+    },
   ];
 
   function scrollToId(id) {
     const el = document.getElementById(id);
     if (!el) return;
-    const rect = el.getBoundingClientRect();
-    window.scrollTo({ left: rect.left + window.pageXOffset, top: rect.top + window.pageYOffset, behavior: 'smooth' });
+    el.scrollIntoView({
+      behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches
+        ? 'auto'
+        : 'smooth',
+    });
   }
 
   let activeIndex = 0;
@@ -82,7 +126,7 @@ let openBball = function () {};
 
   function filter() {
     const q = input.value.toLowerCase();
-    filtered = commands.filter((c) => c.label.toLowerCase().includes(q));
+    filtered = commands.filter(c => c.label.toLowerCase().includes(q));
     activeIndex = 0;
     render();
   }
@@ -222,7 +266,8 @@ let openBball = function () {};
       if (t < 1) {
         requestAnimationFrame(frame);
       } else {
-        const scored = Math.abs(targetX - hoop.x) < hoop.width / 2 && targetY < hoop.y + 40;
+        const scored =
+          Math.abs(targetX - hoop.x) < hoop.width / 2 && targetY < hoop.y + 40;
         if (scored) {
           score++;
           scoreEl.textContent = String(score);
@@ -266,7 +311,18 @@ let openBball = function () {};
 
 /* ---------- konami code easter egg ---------- */
 (function () {
-  const sequence = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
+  const sequence = [
+    'ArrowUp',
+    'ArrowUp',
+    'ArrowDown',
+    'ArrowDown',
+    'ArrowLeft',
+    'ArrowRight',
+    'ArrowLeft',
+    'ArrowRight',
+    'b',
+    'a',
+  ];
   let progress = 0;
   const toast = document.getElementById('konami-toast');
 
@@ -300,18 +356,24 @@ let openBball = function () {};
       const piece = document.createElement('div');
       piece.className = 'confetti-piece';
       piece.style.left = Math.random() * 100 + 'vw';
-      piece.style.background = colors[Math.floor(Math.random() * colors.length)];
+      piece.style.background =
+        colors[Math.floor(Math.random() * colors.length)];
       piece.style.transform = 'rotate(' + Math.random() * 360 + 'deg)';
       const duration = 1.8 + Math.random() * 1.4;
-      piece.style.transition = 'transform ' + duration + 's linear, top ' + duration + 's ease-in';
+      piece.style.transition =
+        'transform ' + duration + 's linear, top ' + duration + 's ease-in';
       document.body.appendChild(piece);
       requestAnimationFrame(function () {
         piece.style.top = '105vh';
-        piece.style.transform = 'rotate(' + (Math.random() * 720 - 360) + 'deg)';
+        piece.style.transform =
+          'rotate(' + (Math.random() * 720 - 360) + 'deg)';
       });
-      setTimeout(function () {
-        piece.remove();
-      }, duration * 1000 + 100);
+      setTimeout(
+        function () {
+          piece.remove();
+        },
+        duration * 1000 + 100,
+      );
     }
   }
 })();
