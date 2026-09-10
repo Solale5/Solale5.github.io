@@ -7,7 +7,8 @@ body.portfolio {
   height: auto;
   background: #faf9f6;
   color: #283b4d;
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: 450;
   line-height: 1.7;
 }
 .portfolio * {
@@ -29,7 +30,7 @@ body.portfolio {
 .portfolio h3 {
   letter-spacing: -0.045em;
   line-height: 1.12;
-  font-weight: 550;
+  font-weight: 600;
 }
 .portfolio h2 {
   font-size: clamp(35px, 4vw, 54px);
@@ -78,10 +79,10 @@ body.portfolio {
   color: #416c98;
 }
 .brand-name {
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 500;
   margin-left: 20px;
-  color: #566779;
+  color: #405367;
 }
 .site-links {
   display: flex;
@@ -89,9 +90,9 @@ body.portfolio {
   gap: 30px;
 }
 .site-links a {
-  color: #566779;
+  color: #405367;
   text-decoration: none;
-  font-size: 13px;
+  font-size: 15px;
 }
 #menu-toggle {
   display: none;
@@ -109,10 +110,10 @@ body.portfolio {
 }
 .eyebrow {
   font:
-    500 11px/1.5 ui-monospace,
+    500 14px/1.6 ui-monospace,
     monospace;
   letter-spacing: 0.15em;
-  color: #566779;
+  color: #405367;
   text-transform: uppercase;
   margin-bottom: 24px !important;
 }
@@ -134,7 +135,7 @@ body.portfolio {
 }
 .intro-description {
   font-size: 20px;
-  color: #566779;
+  color: #405367;
   max-width: 450px;
   line-height: 1.65;
 }
@@ -155,14 +156,14 @@ body.portfolio {
   background: #416c98;
   color: #111b2a !important;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 17px;
   font-weight: 600;
 }
 .primary-action:hover {
   background: #416c98;
 }
 .text-action {
-  font-size: 14px;
+  font-size: 17px;
   text-decoration: none;
 }
 .portrait-frame {
@@ -193,7 +194,7 @@ body.portfolio {
   left: 20px;
   right: 20px;
   z-index: 1;
-  font-size: 11px;
+  font-size: 13px;
   color: #f0f4f9;
 }
 .latest-work {
@@ -211,7 +212,7 @@ body.portfolio {
     10px ui-monospace,
     monospace;
   letter-spacing: 0.1em;
-  color: #566779;
+  color: #405367;
   text-transform: uppercase;
   margin-bottom: 6px;
 }
@@ -228,8 +229,8 @@ body.portfolio {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 12px;
-  font-size: 11px;
-  color: #566779;
+  font-size: 13px;
+  color: #405367;
 }
 .site-section {
   padding: 78px 0;
@@ -244,8 +245,8 @@ body.portfolio {
   margin-bottom: 38px;
 }
 .section-heading > p {
-  color: #566779;
-  font-size: 14px;
+  color: #405367;
+  font-size: 17px;
   margin: 0;
 }
 .portfolio .cw-feature {
@@ -279,7 +280,7 @@ body.portfolio {
   align-items: stretch;
 }
 .project-index {
-  color: #566779;
+  color: #405367;
   font:
     10px ui-monospace,
     monospace;
@@ -288,7 +289,7 @@ body.portfolio {
 .project-card .section-title {
   text-align: left;
   font-size: 26px;
-  font-weight: 550;
+  font-weight: 600;
   margin: 0 0 22px;
   color: #283b4d;
 }
@@ -304,14 +305,14 @@ body.portfolio {
 }
 .project-card .proj-p {
   padding: 0;
-  font-size: 14px;
-  color: #566779;
+  font-size: 17px;
+  color: #405367;
   margin: 20px 0;
 }
 .project-card .link,
 .project-card .snakelink {
   text-align: left;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 500;
   margin: 14px 0 0;
   display: inline-block;
@@ -334,8 +335,8 @@ body.portfolio {
   gap: 60px;
 }
 .resume-summary {
-  color: #566779;
-  font-size: 14px;
+  color: #405367;
+  font-size: 17px;
 }
 .resume-summary em {
   font-style: normal;
@@ -363,7 +364,7 @@ body.portfolio {
 .portfolio .skills li {
   border-radius: 4px;
   background: #eef3f7;
-  font-size: 11px;
+  font-size: 13px;
   padding: 4px 9px;
 }
 .experience-card {
@@ -389,14 +390,14 @@ body.portfolio {
 }
 .experience-date {
   font:
-    11px/1.5 ui-monospace,
+    14px/1.6 ui-monospace,
     monospace;
-  color: #566779;
+  color: #405367;
 }
 .experience-card p,
 .experience-card ul {
-  font-size: 14px;
-  color: #566779;
+  font-size: 17px;
+  color: #405367;
 }
 .experience-card em {
   font-style: normal;
@@ -410,7 +411,7 @@ body.portfolio {
   padding-left: 18px;
 }
 .experience-card a {
-  font-size: 13px;
+  font-size: 15px;
 }
 .experience-card:last-child {
   padding-bottom: 4px;
@@ -435,8 +436,8 @@ body.portfolio {
 }
 .education p,
 .Activities-Honors p {
-  color: #566779;
-  font-size: 13px;
+  color: #405367;
+  font-size: 15px;
 }
 .portfolio .Activities-Honors {
   text-align: left;
@@ -447,7 +448,7 @@ body.portfolio {
   color: #416c98;
   border-radius: 5px;
   padding: 10px 15px;
-  font-size: 12px;
+  font-size: 14px;
 }
 .about-content .container4 {
   padding: 0;
@@ -456,7 +457,7 @@ body.portfolio {
   max-width: 870px;
   font-size: 17px;
   line-height: 1.9;
-  color: #566779;
+  color: #405367;
 }
 .about-content .row {
   margin-top: 36px;
@@ -477,8 +478,8 @@ body.portfolio {
 .about-content ul {
   list-style: none;
   padding: 0;
-  font-size: 13px;
-  color: #566779;
+  font-size: 15px;
+  color: #405367;
 }
 .about-content li {
   margin: 10px 0;
@@ -512,8 +513,8 @@ body.portfolio {
   justify-content: space-between;
   gap: 20px;
   margin-top: 40px;
-  font-size: 12px;
-  color: #566779;
+  font-size: 14px;
+  color: #405367;
 }
 @media (max-width: 800px) {
   .intro {
@@ -589,7 +590,7 @@ body.portfolio {
     padding: 16px 0;
   }
   .intro-foot {
-    font-size: 10px;
+    font-size: 13px;
   }
   .site-section {
     padding: 52px 0;
@@ -617,7 +618,7 @@ body.portfolio {
   }
   .section-heading .hobby-button {
     max-width: 145px;
-    font-size: 11px;
+    font-size: 13px;
   }
   .site-links {
     display: none;
@@ -645,7 +646,7 @@ body.portfolio {
     border-radius: 5px;
     color: #416c98;
     padding: 7px 10px;
-    font-size: 12px;
+    font-size: 14px;
   }
   .portfolio .about-content .row {
     gap: 20px;
@@ -717,8 +718,8 @@ body.portfolio {
 }
 .eyebrow {
   font-family: inherit;
-  font-size: 14px;
-  font-weight: 400;
+  font-size: 17px;
+  font-weight: 500;
   letter-spacing: 0;
   text-transform: none;
   margin-bottom: 12px !important;
@@ -744,7 +745,7 @@ body.portfolio {
   background: #ccdfef;
 }
 .site-links .cmdk-trigger {
-  color: #566779;
+  color: #405367;
   border-color: #ccd6df;
   background: #edf1f4;
 }
@@ -752,7 +753,7 @@ body.portfolio {
   font-family: inherit;
   letter-spacing: 0;
   text-transform: none;
-  font-size: 12px;
+  font-size: 14px;
 }
 .project-card {
   border-radius: 14px;
@@ -813,19 +814,19 @@ body.portfolio {
   margin-bottom: 12px;
 }
 .role-history strong {
-  font-weight: 500;
+  font-weight: 600;
   color: #344d63;
 }
 .role-history span {
-  color: #566779;
-  font-size: 12px;
+  color: #405367;
+  font-size: 14px;
 }
 .earlier-roles {
   border-top: 1px solid #d8e0e7;
   padding-top: 18px;
   margin-top: 24px;
-  color: #566779;
-  font-size: 13px;
+  color: #405367;
+  font-size: 15px;
 }
 .earlier-roles summary {
   cursor: pointer;
@@ -833,6 +834,6 @@ body.portfolio {
   color: #416c98;
 }
 .experience-source {
-  font-size: 13px;
+  font-size: 15px;
   margin-top: 20px;
 }

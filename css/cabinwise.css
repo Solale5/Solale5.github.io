@@ -8,13 +8,14 @@
 }
 .cw {
   --cw-blue: #416c98;
-  --cw-muted: #566779;
+  --cw-muted: #405367;
   --cw-line: #d8e0e7;
   color: #283b4d;
   font-family:
     -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial,
     sans-serif;
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: 450;
   line-height: 1.65;
   text-align: left;
 }
@@ -74,7 +75,7 @@
   color: #0a1422;
   border-radius: 6px;
   padding: 12px 20px;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 600;
   text-decoration: none;
 }
@@ -94,8 +95,8 @@
   border: 1px solid #d8e0e7;
   border-radius: 5px;
   padding: 5px 10px;
-  color: #566779;
-  font-size: 12px;
+  color: #405367;
+  font-size: 14px;
 }
 .cw-feature {
   margin: 24px 4% 48px;
@@ -130,8 +131,8 @@
   justify-content: space-between;
   gap: 8px;
   padding: 20px 24px 0;
-  font-size: 12px;
-  color: #566779;
+  font-size: 14px;
+  color: #405367;
 }
 .cw-mini-stats {
   display: grid;
@@ -142,7 +143,7 @@
 .cw-mini-stats span {
   display: block;
   color: var(--cw-muted);
-  font-size: 11px;
+  font-size: 13px;
 }
 .cw-mini-stats strong {
   font-size: clamp(21px, 2vw, 30px);
@@ -163,7 +164,7 @@
   border-bottom: 1px solid var(--cw-line);
 }
 .cw-nav a {
-  font-size: 14px;
+  font-size: 16px;
   text-decoration: none;
 }
 .cw-nav .cw-brand {
@@ -197,7 +198,7 @@
   color: var(--cw-muted);
 }
 .cw-caption {
-  font-size: 12px;
+  font-size: 14px;
   color: var(--cw-muted);
   margin-top: 12px !important;
 }
@@ -210,14 +211,14 @@
   margin: 0;
 }
 .cw-meta dt {
-  font-size: 11px;
+  font-size: 13px;
   letter-spacing: 0.1em;
   color: var(--cw-muted);
   text-transform: uppercase;
 }
 .cw-meta dd {
   margin: 5px 0 0;
-  font-size: 15px;
+  font-size: 17px;
 }
 .cw-section {
   padding: 72px 0;
@@ -245,9 +246,9 @@
   padding: 26px;
 }
 .cw-panel p {
-  color: #566779;
+  color: #405367;
   margin-bottom: 0;
-  font-size: 15px;
+  font-size: 17px;
 }
 .cw-panel .cw-number {
   font:
@@ -273,8 +274,8 @@
 }
 .cw-demo label {
   display: block;
-  font-size: 12px;
-  color: #566779;
+  font-size: 14px;
+  color: #405367;
   margin-bottom: 7px;
 }
 .cw-demo select {
@@ -297,7 +298,7 @@
   font-size: clamp(28px, 4vw, 44px);
 }
 .cw-demo .cw-mini-stats span {
-  font-size: 13px;
+  font-size: 14px;
 }
 .cw-state {
   color: #416c98;
@@ -332,7 +333,7 @@
 }
 .cw-flow span {
   display: block;
-  font-size: 14px;
+  font-size: 16px;
   color: var(--cw-muted);
   margin-top: 8px;
 }
@@ -360,7 +361,7 @@
   display: block;
 }
 .cw-node span {
-  font-size: 12px;
+  font-size: 14px;
   color: var(--cw-muted);
   margin-top: 7px;
 }
@@ -370,7 +371,7 @@
   font-size: 24px;
 }
 .cw-list {
-  color: #566779;
+  color: #405367;
   padding-left: 20px;
 }
 .cw-list li {
@@ -383,7 +384,7 @@
   justify-content: space-between;
   gap: 20px;
   padding: 40px 0 56px;
-  font-size: 14px;
+  font-size: 16px;
 }
 .cw-skip {
   position: absolute;
@@ -482,8 +483,8 @@
   place-content: center;
   padding: 28px;
   text-align: center;
-  font-size: 13px;
-  color: #566779;
+  font-size: 14px;
+  color: #405367;
   pointer-events: none;
 }
 .cw-model-status[hidden] {
@@ -496,8 +497,8 @@
   flex-wrap: wrap;
   gap: 8px;
   padding: 0 24px 22px;
-  color: #566779;
-  font-size: 11px;
+  color: #405367;
+  font-size: 13px;
 }
 .cw-model-reset {
   border: 1px solid #d8e0e7;
@@ -506,7 +507,7 @@
   color: #416c98;
   padding: 8px 12px;
   font: inherit;
-  font-size: 12px;
+  font-size: 14px;
   cursor: pointer;
 }
 .cw-model-reset:disabled {
@@ -514,8 +515,8 @@
   cursor: default;
 }
 .cw-model-credit {
-  font-size: 12px;
-  color: #566779;
+  font-size: 14px;
+  color: #405367;
   margin-top: 12px;
 }
 .cw-model-credit summary {
@@ -552,8 +553,8 @@
 }
 .cw .cw-eyebrow {
   font-family: inherit;
-  font-size: 13px;
-  font-weight: 400;
+  font-size: 14px;
+  font-weight: 500;
   letter-spacing: 0.01em;
   text-transform: none;
   margin-bottom: 14px;
