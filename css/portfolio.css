@@ -802,3 +802,37 @@ body.portfolio {
     font-size: 36px;
   }
 }
+.role-history {
+  margin: 20px 0 28px;
+}
+.role-history p {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 4px 20px;
+  margin-bottom: 12px;
+}
+.role-history strong {
+  font-weight: 500;
+  color: #344d63;
+}
+.role-history span {
+  color: #566779;
+  font-size: 12px;
+}
+.earlier-roles {
+  border-top: 1px solid #d8e0e7;
+  padding-top: 18px;
+  margin-top: 24px;
+  color: #566779;
+  font-size: 13px;
+}
+.earlier-roles summary {
+  cursor: pointer;
+  padding-bottom: 16px;
+  color: #416c98;
+}
+.experience-source {
+  font-size: 13px;
+  margin-top: 20px;
+}
